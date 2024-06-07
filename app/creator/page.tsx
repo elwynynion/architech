@@ -34,7 +34,7 @@ function page() {
   return (
     <div className="bg-[#FFFEFA] h-full max-lg:px-5 ">
       <div className="container p-0">
-        <Navigation />
+        <Navigation name="creator" />
         <section className="flex items-center my-16">
           <div className="w-full text-center">
             <h2 className="text-[#50814B]  text-[45px]">
