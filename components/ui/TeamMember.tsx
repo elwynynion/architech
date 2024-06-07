@@ -5,7 +5,6 @@ function TeamMember(team: {
   name: string;
   image: string;
   position: string;
-  span?: string;
 }) {
   return (
     <div key={team.id} className="flex flex-col items-center">
