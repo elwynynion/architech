@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function page() {
+  const name = "daniel";
+
   return (
-    <div>
-      
-    </div>
-  )
+    <main>
+      <div>{name}</div>
+      <div></div>
+    </main>
+  );
 }
 
-export default page
+export default page;
