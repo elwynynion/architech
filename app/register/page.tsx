@@ -1,8 +1,59 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-function page() {
+function register() {
+  const [error, setError] = useState("");
+  const router = useRouter();
+  function isValidEmail(email: string) {
+    const emailRegex = /^[A-Z0-9,_%+-]+@[A-Z0-9,-]+\.[A-Z]{2,}$/i;
+    return emailRegex.test(email);
+  }
+  async function handleSubmit(e: any) {
+    e.preventDefault();
+    const user = e.target[0].value;
+    const email = e.target[1].value;
+    const password = e.target[2].value;
+
+    console.log(user, email, password);
+
+    if (!isValidEmail(email)) {
+      setError("Email is invalid");
+      return;
+    }
+    if (!password || password < 8) {
+      setError("Password is invalid");
+      return;
+    }
+
+    try {
+      const res = await fetch("/api/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          user,
+          email,
+          password,
+        }),
+      });
+      if (res.status === 400) {
+        setError("This email is already registered");
+      }
+      if (res.status === 200) {
+        setError("");
+        router.push("/login");
+      }
+    } catch (err) {
+      setError("Error, try again");
+      console.log(err);
+    }
+  }
+
   return (
     <div className="bg-[#FFFEFA] h-[100vh] text-[#4F7853] flex items-center relative overflow-hidden ">
       <div className="container mt-[-15vh] relative z-10 flex max-[1175px]:justify-center">
@@ -15,7 +66,7 @@ function page() {
           />
           <h1 className="font-bold text-[30px]">Welcome to our Site!</h1>
           <form
-            action=""
+            onSubmit={handleSubmit}
             className="flex flex-col max-w-[350px] space-y-4 w-full"
           >
             <div className="relative">
@@ -67,9 +118,13 @@ function page() {
               </label>
             </div>
 
-            <button className="submit font-bold bg-[#4F7853] rounded-lg text-white text-[20px] p-1 hover:opacity-90">
+            <button
+              type="submit"
+              className="submit font-bold bg-[#4F7853] rounded-lg text-white text-[20px] p-1 hover:opacity-90"
+            >
               Register
             </button>
+            <p className="text-red-500 text-[16px] mb-4">{error && error}</p>
             <div className="text-[15px] text-center">
               Already have an account?
               <Link href={"/login"} className="underline font-bold">
@@ -98,4 +153,4 @@ function page() {
   );
 }
 
-export default page;
+export default register;

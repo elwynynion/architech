@@ -68,7 +68,6 @@ function Page() {
           </form>
         </div>
       </div>
-
       <div className="absolute top-0 right-2 z-0 bottom-0 h-[100vh] w-[1000px] max-[1175px]:hidden">
         <Image src={"/elements/Ellipse1.png"} alt="" layout="fill" />
       </div>
