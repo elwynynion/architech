@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function page() {
   return (
-    <div className="bg-[#FFFEFA] h-full max-lg:px-5">
-      <div className="container px-2 ">
-        <Navigation />
+    <div className="bg-[#FFFEFA] h-full px-5">
+      <div className="container px-0 ">
+        <Navigation name="about" />
         <section className="flex items-center mt-24 justify-center">
           <div className="w-[600px] text-center relative">
             <Image

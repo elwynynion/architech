@@ -4,8 +4,9 @@ import Link from "next/link";
 interface MenuBarProps {
   isVisible: boolean;
   toggleMenu: () => void;
+  name: string;
 }
-function MenuBar({ isVisible, toggleMenu }: MenuBarProps) {
+function MenuBar({ isVisible, toggleMenu, name }: MenuBarProps) {
   return (
     <div
       className={`text-center fixed box-border z-50 bg-[#FAF6E9] max-[650px]:flex flex-col top-0 right-0 h-full transition-all duration-500 ${
@@ -25,14 +26,22 @@ function MenuBar({ isVisible, toggleMenu }: MenuBarProps) {
         href={"/about"}
       >
         About Us
-        <div className="bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100"></div>
+        <div
+          className={`bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
+            name === "about" && "opacity-100"
+          }`}
+        ></div>
       </Link>
       <Link
         className="relative text-[#4F7853] text-[20px] py-1 px-2 m-4 rounded-md font-bold group"
         href={"/creator"}
       >
         Creators
-        <div className=" bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100"></div>
+        <div
+          className={` ${
+            name === "creator" && "opacity-100"
+          } bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100`}
+        ></div>
       </Link>
       <Link
         className="relative text-[#4F7853] text-[20px] py-1 px-2 m-4 rounded-md font-bold group"
