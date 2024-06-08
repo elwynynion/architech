@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-function register() {
+export default function Page() {
   const [error, setError] = useState("");
   const router = useRouter();
   function isValidEmail(email: string) {
@@ -17,8 +17,6 @@ function register() {
     const user = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
-
-    console.log(user, email, password);
 
     if (!isValidEmail(email)) {
       setError("Email is invalid");
@@ -36,16 +34,18 @@ function register() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          user,
-          email,
-          password,
+          username: user,
+          email: email,
+          password: password,
         }),
       });
+
       if (res.status === 400) {
         setError("This email is already registered");
       }
       if (res.status === 200) {
         setError("");
+        console.log("User registered")
         router.push("/login");
       }
     } catch (err) {
@@ -152,5 +152,3 @@ function register() {
     </div>
   );
 }
-
-export default register;

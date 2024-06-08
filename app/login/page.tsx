@@ -60,7 +60,7 @@ function Page() {
               Login
             </button>
             <div className="text-[15px] text-center">
-              Don't have an account yet?{" "}
+              Don{"'"}t have an account yet?{" "}
               <Link href={"/register"} className="underline font-bold">
                 Sign up for free
               </Link>

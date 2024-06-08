@@ -17,7 +17,7 @@ const btnLabel = [
   "FINAL RESEARCHER",
 ];
 
-function page() {
+export default function Page() {
   const [teams, setTeams] = useState(team);
   const [temp, setTemp] = useState(team);
   const [activeButton, setActiveButton] = useState("ALL");
@@ -82,4 +82,3 @@ function page() {
   );
 }
 
-export default page;

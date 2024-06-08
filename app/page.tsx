@@ -15,7 +15,7 @@ export default function Home() {
               height={90}
               className="max-[600px]:w-[60px]"
             />
-            <img
+            <Image
               src="/architech-image/architech-typography.png"
               alt="Architech-Big Icon"
               className="max-[600px]:w-[350px]"
