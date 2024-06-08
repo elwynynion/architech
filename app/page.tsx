@@ -18,7 +18,9 @@ export default function Home() {
             <Image
               src="/architech-image/architech-typography.png"
               alt="Architech-Big Icon"
-              className="max-[600px]:w-[350px]"
+              width={350}
+              height={350}
+              className="max-[600px]:w-[250px]"
             />
           </div>
         </div>
