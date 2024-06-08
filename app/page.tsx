@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="bg-[#FAF6E9] h-[100vh]">
-        <div className="container px-5">
+      <div className="bg-[#FAF6E9] h-[100vh] px-5">
+        <div className="container p-0">
           <Navigation name="home" />
           <div className="flex justify-center items-center mt-auto h-[80vh] gap-4 container">
             <Image
