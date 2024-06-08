@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function Page() {
+export default function Page() {
   return (
     <div className="bg-[#FFFEFA] h-[100vh] text-[#4F7853] flex items-center relative overflow-hidden ">
       <div className="container mt-[-15vh] relative z-10 flex max-[1175px]:justify-center">
@@ -85,5 +85,3 @@ function Page() {
     </div>
   );
 }
-
-export default Page;
