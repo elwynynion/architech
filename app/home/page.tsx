@@ -20,8 +20,10 @@ export default async function Page() {
             placeholder="Search something"
             className="max-w-[600px] w-full border border-[#4F7853]  rounded-full py-2 px-4 focus:border-[#fafafa] mt-16 mb-20"
           />
+
           <div className="relative w-full">
             <div className="outline outline-[#4F7853] w-full h-full absolute top-[-8px] rounded-lg right-[8px] z-0 "></div>
+
             <div className="w-full bg-[#81BC87] text-white font-bold rounded-lg px-10 pt-10 pb-14 relative">
               <p className="text-[45px]">Hi, User</p>
               <p className="text-[20px]">
