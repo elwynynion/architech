@@ -4,16 +4,25 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { debug } from "console";
+import { useToast } from "@/components/ui/use-toast";
 
 export default function Page() {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
   function isValidEmail(email: string) {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     return emailRegex.test(email);
   }
+
   async function handleSubmit(e: any) {
+    setIsLoading(true);
+    isLoading === true &&
+      toast({
+        title: "Registering...",
+      });
+
     e.preventDefault();
     const username = e.target[0].value;
     const email = e.target[1].value;
@@ -48,6 +57,10 @@ export default function Page() {
         setError("Email is already registered!");
       }
       if (res.status === 200) {
+        toast({
+          duration: 1000,
+          title: "Registered Succesfully",
+        });
         setError("");
         router.push("/login");
       }
@@ -55,6 +68,7 @@ export default function Page() {
       setError("Error, try again");
       console.log(err);
     }
+    setIsLoading(false);
   }
   return (
     <div className="bg-[#FFFEFA] h-[100vh] text-[#4F7853] flex items-center relative overflow-hidden ">
@@ -110,7 +124,6 @@ export default function Page() {
                 id="password"
                 className="border border-[#A7A7A7] rounded-lg text-black px-2 py-1 w-full peer"
                 placeholder=" "
-                required
               />
               <label
                 htmlFor="password"
@@ -126,9 +139,11 @@ export default function Page() {
             >
               Register
             </button>
-            <p className="text-red-500 text-[16px] mb-4">{error && error}</p>
+            <p className="text-red-500 text-[16px] mb-4 text-center">
+              {error && error}
+            </p>
             <div className="text-[15px] text-center">
-              Already have an account?
+              Already have an account?{" "}
               <Link href={"/login"} className="underline font-bold">
                 Sign in now!
               </Link>

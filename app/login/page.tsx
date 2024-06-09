@@ -1,8 +1,54 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const [error, setError] = useState("");
+  const router = useRouter();
+  const session = useSession();
+
+  useEffect(() => {
+    if (session?.status === "authenticated") {
+      router.replace("/home");
+    }
+  }, [session, router]);
+
+  function isValidEmail(email: string) {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return emailRegex.test(email);
+  }
+  async function handleSubmit(e: any) {
+    console.log("click");
+    e.preventDefault();
+    const email = e.target[0].value;
+    const password = e.target[1].value;
+
+    if (!isValidEmail(email)) {
+      setError("Invalid Email");
+      return;
+    }
+    if (!password || password.length < 8) {
+      setError("Invalid Password");
+      return;
+    }
+
+    const res = await signIn("credentials", {
+      redirect: false,
+      email,
+      password,
+    });
+
+    if (res?.error) {
+      setError("Invalid email or password");
+      if (res?.url) router.replace("/home");
+    } else {
+      setError("");
+    }
+  }
+
   return (
     <div className="bg-[#FFFEFA] h-[100vh] text-[#4F7853] flex items-center relative overflow-hidden ">
       <div className="container mt-[-15vh] relative z-10 flex max-[1175px]:justify-center">
@@ -15,7 +61,7 @@ export default function Page() {
           />
           <h1 className="font-bold text-[30px]">Welcome Back!</h1>
           <form
-            action=""
+            onSubmit={handleSubmit}
             className="flex flex-col max-w-[350px] space-y-4 w-full"
           >
             <div className="relative">
@@ -56,9 +102,15 @@ export default function Page() {
             >
               Forgot your Password?
             </Link>
-            <button className="submit font-bold bg-[#4F7853] rounded-lg text-white text-[20px] p-1 hover:opacity-90">
+            <button
+              type="submit"
+              className="submit font-bold bg-[#4F7853] rounded-lg text-white text-[20px] p-1 hover:opacity-90"
+            >
               Login
             </button>
+            <p className="text-red-500 text-[16px] mb-4 text-center">
+              {error && error}
+            </p>
             <div className="text-[15px] text-center">
               Don{"'"}t have an account yet?{" "}
               <Link href={"/register"} className="underline font-bold">
