@@ -74,7 +74,7 @@ function Navigation({ name }: { name: string }) {
           </Link>
           <Link
             className="relative text-[#4F7853] text-[20px] py-1 px-2 rounded-md font-bold group"
-            href={"/"}
+            href={"/login"}
           >
             Log In
             <div className="bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100"></div>
