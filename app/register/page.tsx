@@ -4,28 +4,33 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { debug } from "console";
 
 export default function Page() {
   const [error, setError] = useState("");
   const router = useRouter();
   function isValidEmail(email: string) {
-    const emailRegex = /^[A-Z0-9,_%+-]+@[A-Z0-9,-]+\.[A-Z]{2,}$/i;
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     return emailRegex.test(email);
   }
   async function handleSubmit(e: any) {
     e.preventDefault();
-    const user = e.target[0].value;
+    const username = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
-
     if (!isValidEmail(email)) {
-      setError("Email is invalid");
+      setError("Invalid Email");
       return;
     }
-    if (!password || password < 8) {
-      setError("Password is invalid");
+    if (!username) {
+      setError("Invalid username");
       return;
     }
+    if (!password || password.length < 8) {
+      setError("Invalid Password");
+      return;
+    }
+    console.log(email, password);
 
     try {
       const res = await fetch("/api/register", {
@@ -34,18 +39,16 @@ export default function Page() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: user,
-          email: email,
-          password: password,
+          username,
+          email,
+          password,
         }),
       });
-
       if (res.status === 400) {
-        setError("This email is already registered");
+        setError("Email is already registered!");
       }
       if (res.status === 200) {
         setError("");
-        console.log("User registered")
         router.push("/login");
       }
     } catch (err) {
@@ -53,7 +56,6 @@ export default function Page() {
       console.log(err);
     }
   }
-
   return (
     <div className="bg-[#FFFEFA] h-[100vh] text-[#4F7853] flex items-center relative overflow-hidden ">
       <div className="container mt-[-15vh] relative z-10 flex max-[1175px]:justify-center">

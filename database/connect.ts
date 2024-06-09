@@ -1,32 +1,21 @@
-//@ts-nocheck
 import mongoose from "mongoose";
-const NEXT_PUBLIC_MONGODB_URI = process.env.NEXT_PUBLIC_MONGODB_URI;
-let cached = global.mongoose;
-if (!cached) cached = global.mongoose = { conn: null, promise: null };
-async function connectDB() {
-  if (cached.conn) {
-    return cached.conn;
-  }
 
-  if (!cached.promise) {
-    const opts = {
-      bufferCommands: false,
-    };
+const connectDB = async () => {
+  if (mongoose.connections[0].readyState) return;
 
-    cached.promise = mongoose
-      .connect(NEXT_PUBLIC_MONGODB_URI, opts)
-      .then((mongoose) => {
-        return mongoose;
-      });
+  const mongoUrl: string = process.env.MONGODB_URL as string;
+
+  if (!mongoUrl) {
+    throw new Error("MONGODB_URL environment variable is not set");
   }
 
   try {
-    cached.conn = await cached.promise;
-  } catch (e) {
-    cached.promise = null;
-    throw e;
+    await mongoose.connect(mongoUrl);
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    console.error("Error connecting to MongoDB", error);
+    throw error;
   }
+};
 
-  return cached.conn;
-}
 export default connectDB;
