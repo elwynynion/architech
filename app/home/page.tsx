@@ -43,11 +43,74 @@ export default async function Page() {
           <div className="w-full m-10">
             <div className="font-bold text-[#4F7853] text-[23px] flex">
               <p>Overview</p>
-              <Link href="/module" className="ml-auto">
+              <Link href="/courses" className="ml-auto">
                 See all
               </Link>
             </div>
-            <div></div>
+            <div className="grid grid-cols-4 gap-4">
+              <Link
+                href={"/courses/prelim"}
+                className="bg-[#81BC87] transition-all duration-300 w-full p-5 rounded-lg mt-4 cursor-pointer hover:bg-[#5f8b64]"
+              >
+                <p className="text-white font-bold text-[25px]">Prelims</p>
+                <div className="w-full h-[140px] flex justify-center items-center">
+                  <Image
+                    src={"/elements/prelim.png"}
+                    alt=""
+                    width={140}
+                    height={140}
+                    className="hover:w-[170px] transition-all duration-300"
+                  />
+                </div>
+              </Link>
+              <Link
+                href={"/courses/prelim"}
+                className="bg-[#81BC87] transition-all duration-300 w-full p-5 rounded-lg mt-4 cursor-pointer hover:bg-[#5f8b64]"
+              >
+                <p className="text-white font-bold text-[25px]">Midterms</p>
+                <div className="w-full h-[140px] flex justify-center items-center">
+                  <Image
+                    src={"/elements/prelim.png"}
+                    alt=""
+                    width={140}
+                    height={140}
+                    className="hover:w-[170px] transition-all duration-300"
+                  />
+                </div>
+              </Link>
+
+              <Link
+                href={"/courses/prelim"}
+                className="bg-[#81BC87] transition-all duration-300 w-full p-5 rounded-lg mt-4 cursor-pointer hover:bg-[#5f8b64]"
+              >
+                <p className="text-white font-bold text-[25px]">Pre-finals</p>
+                <div className="w-full h-[140px] flex justify-center items-center">
+                  <Image
+                    src={"/elements/prelim.png"}
+                    alt=""
+                    width={140}
+                    height={140}
+                    className="hover:w-[170px] transition-all duration-300"
+                  />
+                </div>
+              </Link>
+
+              <Link
+                href={"/courses/prelim"}
+                className="bg-[#81BC87] transition-all duration-300 w-full p-5 rounded-lg mt-4 cursor-pointer hover:bg-[#5f8b64]"
+              >
+                <p className="text-white font-bold text-[25px]">Finals</p>
+                <div className="w-full h-[140px] flex justify-center items-center">
+                  <Image
+                    src={"/elements/prelim.png"}
+                    alt=""
+                    width={140}
+                    height={140}
+                    className="hover:w-[170px] transition-all duration-300"
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
