@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="bg-[#FAF6E9] h-[100vh]">
-        <div className="container px-5">
+      <div className="bg-[#FAF6E9] h-[100vh] px-5">
+        <div className="container p-0">
           <Navigation name="home" />
           <div className="flex justify-center items-center mt-auto h-[80vh] gap-4 container">
             <Image
@@ -15,10 +15,12 @@ export default function Home() {
               height={90}
               className="max-[600px]:w-[60px]"
             />
-            <img
+            <Image
               src="/architech-image/architech-typography.png"
               alt="Architech-Big Icon"
-              className="max-[600px]:w-[350px]"
+              width={350}
+              height={350}
+              className="max-[600px]:w-[250px]"
             />
           </div>
         </div>

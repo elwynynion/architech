@@ -17,7 +17,7 @@ const btnLabel = [
   "FINAL RESEARCHER",
 ];
 
-function page() {
+export default function Page() {
   const [teams, setTeams] = useState(team);
   const [temp, setTemp] = useState(team);
   const [activeButton, setActiveButton] = useState("ALL");
@@ -32,7 +32,7 @@ function page() {
   }
 
   return (
-    <div className="bg-[#FFFEFA] h-full max-lg:px-5 ">
+    <div className="bg-[#FFFEFA] h-full px-5 ">
       <div className="container p-0">
         <Navigation name="creator" />
         <section className="flex items-center my-16">
@@ -82,4 +82,3 @@ function page() {
   );
 }
 
-export default page;
