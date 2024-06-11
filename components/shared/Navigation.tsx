@@ -79,7 +79,7 @@ function Navigation({ name }: { name: string }) {
               >
                 Home
                 <div
-                  className={`bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
+                  className={`bg-[#4F7853] transition-all duration-300 h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
                     name === "home" && "opacity-100"
                   }`}
                 ></div>
@@ -90,7 +90,7 @@ function Navigation({ name }: { name: string }) {
               >
                 Courses
                 <div
-                  className={`bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
+                  className={`transition-all duration-300 bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
                     name === "courses" && "opacity-100"
                   }`}
                 ></div>
@@ -103,7 +103,7 @@ function Navigation({ name }: { name: string }) {
           >
             About Us
             <div
-              className={`bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
+              className={`transition-all duration-300 bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
                 name === "about" && "opacity-100"
               }`}
             ></div>
@@ -114,7 +114,7 @@ function Navigation({ name }: { name: string }) {
           >
             Creators
             <div
-              className={`bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
+              className={`transition-all duration-300 bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
                 name === "creator" && "opacity-100"
               }`}
             ></div>
@@ -126,7 +126,7 @@ function Navigation({ name }: { name: string }) {
               href={"/login"}
             >
               Log In
-              <div className="bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100"></div>
+              <div className="transition-all duration-300 bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100"></div>
             </Link>
           )}
         </div>
@@ -141,7 +141,7 @@ function Navigation({ name }: { name: string }) {
                     alt="avatar"
                     width={40}
                     height={40}
-                    className="border-2 border-[#4F7853] rounded-full hover:border-[#89cc90] hover:opacity-90"
+                    className="border-2 transition-all duration-300 border-[#4F7853] rounded-full hover:border-[#89cc90] hover:opacity-90"
                   />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
