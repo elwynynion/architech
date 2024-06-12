@@ -16,7 +16,47 @@ const userSchema = new Schema(
     },
     password: {
       type: String,
+      required: true,
+    },
+    firstname: {
+      type: String,
       required: false,
+      default: "",
+    },
+    lastname: {
+      type: String,
+      required: false,
+      default: "",
+    },
+    profilePic: {
+      type: String,
+      required: false,
+      default: "",
+    },
+    bio: {
+      type: String,
+      required: false,
+      default: "",
+    },
+    courses: {
+      type: String,
+      required: false,
+      default: "",
+    },
+    facebook: {
+      type: String,
+      required: false,
+      default: "",
+    },
+    linkedin: {
+      type: String,
+      required: false,
+      default: "",
+    },
+    github: {
+      type: String,
+      required: false,
+      default: "",
     },
   },
   { timestamps: true }

@@ -9,6 +9,7 @@ async function Page() {
   if (!session) {
     redirect("/");
   }
+
   return (
     <div className="bg-[#FFFEFA]">
       <div className="container">
@@ -80,15 +81,15 @@ async function Page() {
             <p className="text-[#4F7853] font-bold text-[22px] mt-2">
               References
             </p>
-            <Link
-              href="/courses/references"
-              className="grid grid-cols-5 gap-2 text-white"
-            >
-              <div className="bg-[#81BC87] w-full p-5 rounded-lg cursor-pointer hover:bg-[#5f8b64] col-span-2">
+            <div className="grid grid-cols-5 gap-2 text-white">
+              <Link
+                href="/courses/references"
+                className="bg-[#81BC87] w-full p-5 rounded-lg cursor-pointer hover:bg-[#5f8b64] col-span-2"
+              >
                 View References
-              </div>
+              </Link>
               <div></div>
-            </Link>
+            </div>
           </section>
         </div>
       </div>

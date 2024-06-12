@@ -9,7 +9,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import MenuBar from "./MenuBar";
@@ -25,7 +24,7 @@ function Navigation({ name }: { name: string }) {
   }
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 650 && isMenuOpen) {
+      if (window.innerWidth > 750 && isMenuOpen) {
         setIsMenuOpen(false);
       }
     };
@@ -40,13 +39,16 @@ function Navigation({ name }: { name: string }) {
   return (
     <>
       <MenuBar isVisible={isMenuOpen} toggleMenu={toggleMenu} name={name} />
-      <nav className="flex py-4 mb-5 max-[650px]:flex-col relative justify-between">
+      <nav className="flex py-4 mb-5 max-[750px]:flex-col relative ">
         <div
           className={`${
             !session && "mr-auto"
-          } flex max-[650px]:mr-0 items-center`}
+          } flex max-[750px]:mr-0 items-center`}
         >
-          <Link className="flex space-x-2 cursor-pointer mr-auto" href={"/"}>
+          <Link
+            className="flex space-x-2 cursor-pointer mr-auto"
+            href={`${session ? "/home" : "/"}`}
+          >
             <Image
               src={"/architech-image/architech-icon.png"}
               width={33}
@@ -57,7 +59,7 @@ function Navigation({ name }: { name: string }) {
               ArchiTech
             </div>
           </Link>
-          <button className="hidden max-[650px]:block" onClick={toggleMenu}>
+          <button className="hidden max-[750px]:block" onClick={toggleMenu}>
             <Image
               src={"/elements/hamburger-icon.png"}
               alt="hamburger menu"
@@ -67,8 +69,8 @@ function Navigation({ name }: { name: string }) {
           </button>
         </div>
         <div
-          className={`gap-3 max-[650px]:hidden ${
-            session && "flex items-center"
+          className={`gap-3 max-[750px]:hidden ${
+            session && "flex items-center mx-auto"
           } `}
         >
           {session && (
@@ -131,7 +133,11 @@ function Navigation({ name }: { name: string }) {
           )}
         </div>
 
-        <div className="max-[650px]:hidden">
+        <div
+          className={`${
+            session && "w-[145px] max-[940px]:w-[40px]"
+          } max-[750px]:hidden flex justify-end`}
+        >
           {session && (
             <>
               <DropdownMenu>
@@ -147,10 +153,14 @@ function Navigation({ name }: { name: string }) {
                 <DropdownMenuContent>
                   <DropdownMenuLabel>{session.user?.email}</DropdownMenuLabel>
                   <DropdownMenuSeparator />
+
                   <DropdownMenuItem className="cursor-pointer">
-                    <User className="mr-2 h-4 w-4" />
-                    <span>Profile</span>
+                    <Link href={"/profile"} className="flex w-full">
+                      <User className="mr-2 h-4 w-4" />
+                      <span>Profile</span>
+                    </Link>
                   </DropdownMenuItem>
+
                   <DropdownMenuItem
                     className="cursor-pointer"
                     onClick={() => {
