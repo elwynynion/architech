@@ -10,7 +10,7 @@ export default async function Page() {
     redirect("/");
   }
   return (
-    <div className="bg-[FFFEFA] min-h-dvh">
+    <div className="bg-[#FFFEFA] min-h-dvh">
       <div className="container">
         <Navigation name="home" />
 
