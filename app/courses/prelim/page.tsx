@@ -30,7 +30,7 @@ function page() {
           <h2 className="textflex font-black text-center text-[#4f7853] text-4xl lg:text-6xl border-b-2 border-[#4f7853] mb-6">
             Architecture Basics
           </h2>
-          <div className="p-10">
+          <div className="p-5">
             <div className="grid lg:grid-cols-2 gap-6 mb-14">
               <div className="">
                 <h1 className="text-4xl font-bold text-[#4f7853] text-center">
@@ -49,7 +49,7 @@ function page() {
                   elements that process raw data and instruction.
                 </p>
               </div>
-              <div className="border-4 border-[#4f7853] rounded-xl p-5">
+              <div className=" p-5">
                 <Image
                   className="rounded-xl lg:h-full object-cover"
                   src={"/prelim-image/computer system.png"}
@@ -61,7 +61,7 @@ function page() {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-10 mb-20">
-              <div className="border-4 border-[#4f7853] rounded-xl p-5">
+              <div className=" p-5">
                 <Image
                   className="rounded-xl lg:h-full object-cover"
                   src={"/prelim-image/data.png"}
@@ -107,7 +107,7 @@ function page() {
             </h3>
             <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/system software.png"}
@@ -121,7 +121,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/application software.png"}
@@ -135,7 +135,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/hardware.png"}
@@ -149,7 +149,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/microprocessor.png"}
@@ -163,7 +163,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/primary storage.png"}
@@ -177,7 +177,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/secondary storage.png"}
@@ -191,7 +191,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/hdd.png"}
@@ -205,7 +205,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/flash drive.png"}
@@ -219,7 +219,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/sdd.png"}
@@ -239,7 +239,7 @@ function page() {
             </h3>
             <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/keyboard.png"}
@@ -253,7 +253,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/mouse.png"}
@@ -267,7 +267,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/microphone.png"}
@@ -287,7 +287,7 @@ function page() {
             </h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/monitor.png"}
@@ -301,7 +301,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/printer.png"}
@@ -315,7 +315,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/speaker.png"}
@@ -329,7 +329,7 @@ function page() {
                 </h4>
               </div>
               <div className="md:col-start-2 md:col-span-1 col-span-1">
-                <div className="border-4 border-[#4f7853] rounded-2xl">
+                <div className="">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/communication.png"}
@@ -512,138 +512,133 @@ function page() {
                   </p>
                 </div>
 
-                <div className="p-2 sm:p-5 md:p-2">
-                  <h1 className="text-xl sm:text-2xl font-bold text-[#5C715E] text-left mt-1 sm:mt-2">
-                    Solutions to Architecture Complexity
-                  </h1>
-                  <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                    These are the different solutions to solve this architecture
-                    complexity challenges:
-                  </p>
-                  <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 mt-4 sm:mt-5">
-                    <div className="border-2 border-[#4f7853] rounded-xl p-5">
-                      <h1 className="text-lg sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
-                        Abstraction
-                      </h1>
-                      <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                        It is used to characterize a certain object at different
-                        levels of representation offering models. Basically, it
-                        is an ideal model put into a representation.
-                        Abstractions can help us, as software creators, explain
-                        complexities in simpler ways, getting the message across
-                        to many audiences and allowing us to move faster from
-                        cohesive understanding.
-                      </p>
-                    </div>
-                    <div className="border-2 border-[#4f7853] rounded-xl p-5">
-                      <h1 className="text-lg sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
-                        Computer Hierarchy
-                      </h1>
-                      <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                        It is a structure that has a predetermined ordering from
-                        high to low. It refers to systems that are organized in
-                        the shape of a pyramid, with each row of objects linked
-                        to objects directly beneath it.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="border-2 border-[#4f7853] rounded-xl p-2 mt-4 sm:mt-5">
+                <h1 className="text-xl sm:text-2xl font-bold text-[#5C715E] text-left mt-1 sm:mt-2">
+                  Solutions to Architecture Complexity
+                </h1>
+                <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                  These are the different solutions to solve this architecture
+                  complexity challenges:
+                </p>
+                <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 mt-4 sm:mt-5">
+                  <div className="border-2 border-[#4f7853] rounded-xl p-5">
                     <h1 className="text-lg sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
-                      Decomposition
+                      Abstraction
                     </h1>
-                    <p className="text-sm sm:text-base md:text-lg text-center text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                      It is a process of splitting the system in smaller chunks;
-                      people can work better by working on smaller separate
-                      tasks. Once the system is decomposed, it does the
-                      following:
+                    <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                      It is used to characterize a certain object at different
+                      levels of representation offering models. Basically, it is
+                      an ideal model put into a representation. Abstractions can
+                      help us, as software creators, explain complexities in
+                      simpler ways, getting the message across to many audiences
+                      and allowing us to move faster from cohesive
+                      understanding.
                     </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-5 mb-3 sm:mb-4 md:mb-5 p-2">
-                      <div className=" p-2 mt-4">
-                        <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                          Work on each chunk in different times (prioritizing
-                          important chunks)
-                        </p>
-                      </div>
-                      <div className=" p-2 mt-4">
-                        <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                          Give each chunk to a different person/team (work can
-                          be done in parallel).
-                        </p>
-                      </div>
-                    </div>
                   </div>
-
-                  <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 mt-1">
-                    <div className=" p-2 mt-4 col-span-1 lg:col-span-2">
-                      <h1 className="text-sm sm:text-base md:text-lg  text-[#5C715E] text-justify mt-1 sm:mt-2">
-                        The five levels in a memory hierarchy are categorized
-                        based on speed and usage and form a pyramid. The levels
-                        in a memory hierarchical pyramid are the following:
-                      </h1>
-                      <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-3 mt-2">
-                        <Image
-                          className="h-full w-full"
-                          src={"/prelim-image/memory heirarchy.png"}
-                          width={200}
-                          height={200}
-                          alt="Computer System"
-                        />
-                        <div className="lg:pt-20 md:pt-10 sm:pt-5">
-                          <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                            <strong>Level 0:</strong> CPU registers
-                          </p>
-                          <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                            <strong>Level 1:</strong> Cache memory
-                          </p>
-                          <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                            <strong>Level 2:</strong> Primary memory or main
-                            memory
-                          </p>
-                          <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                            <strong>Level 3:</strong> Secondary memory or
-                            magnetic disks or solid-state storage
-                          </p>
-                          <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                            <strong>Level 4:</strong> Tertiary memory or optical
-                            disks or magnetic tapes
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="border-2 border-[#4f7853] rounded-xl p-5">
+                    <h1 className="text-lg sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
+                      Computer Hierarchy
+                    </h1>
+                    <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                      It is a structure that has a predetermined ordering from
+                      high to low. It refers to systems that are organized in
+                      the shape of a pyramid, with each row of objects linked to
+                      objects directly beneath it.
+                    </p>
                   </div>
+                </div>
 
-                  <h1 className="lg:text-2xl sm:text-xl font-bold text-[#5C715E] text-center mt-16">
-                    Characteristics of Memory Hierarchy
+                <div className="border-2 border-[#4f7853] rounded-xl p-2 mt-4 sm:mt-5">
+                  <h1 className="text-lg sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
+                    Decomposition
                   </h1>
-
-                  <div className=" p-5 mt-2 grid lg:grid-cols-2 gap-5">
-                    <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                      <strong>Capacity</strong> the volume of information that a
-                      memory device can store. As we move down the memory
-                      pyramid, the capacity or memory size increases.
-                    </p>
-                    <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                      <strong>Access time</strong> Access time is the time
-                      interval from when a read/write request is made and when
-                      the data actually becomes available. It increases as we
-                      move from the top to the bottom of the memory hierarchy
-                    </p>
-                    <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                      <strong>Performance</strong> Without a memory hierarchy,
-                      there is a speed gap between CPU registers and the main
-                      memory. This increases access time and directly impacts
-                      the system's performance.
-                    </p>
-                    <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                      <strong>Cost per bit:</strong> The cost per bit is
-                      calculated by dividing the total cost of the memory by the
-                      total number of accessed bits. As we move from the top of
-                      the memory hierarchy to the bottom, the cost per bit
-                      decreases. This is because internal memory is costlier
-                      than external memory.
-                    </p>
+                  <p className="text-sm sm:text-base md:text-lg text-center text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                    It is a process of splitting the system in smaller chunks;
+                    people can work better by working on smaller separate tasks.
+                    Once the system is decomposed, it does the following:
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-5 mb-3 sm:mb-4 md:mb-5 p-2">
+                    <div className=" p-2 mt-4">
+                      <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                        Work on each chunk in different times (prioritizing
+                        important chunks)
+                      </p>
+                    </div>
+                    <div className=" p-2 mt-4">
+                      <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                        Give each chunk to a different person/team (work can be
+                        done in parallel).
+                      </p>
+                    </div>
                   </div>
+                </div>
+
+                <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 mt-10">
+                  <div className=" p-2 mt-4 col-span-1 lg:col-span-2">
+                    <h1 className="lg:text-2xl sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
+                      Five Levels of Memory Hierarchy
+                    </h1>
+                    <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-3 mt-2">
+                      <Image
+                        className="h-full w-full"
+                        src={"/prelim-image/memory heirarchy.png"}
+                        width={200}
+                        height={200}
+                        alt="Computer System"
+                      />
+                      <div className="lg:pt-20 md:pt-10 sm:pt-5">
+                        <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                          <strong>Level 0:</strong> CPU registers
+                        </p>
+                        <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                          <strong>Level 1:</strong> Cache memory
+                        </p>
+                        <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                          <strong>Level 2:</strong> Primary memory or main
+                          memory
+                        </p>
+                        <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                          <strong>Level 3:</strong> Secondary memory or magnetic
+                          disks or solid-state storage
+                        </p>
+                        <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                          <strong>Level 4:</strong> Tertiary memory or optical
+                          disks or magnetic tapes
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h1 className="lg:text-2xl sm:text-xl font-bold text-[#5C715E] text-center mt-16">
+                  Characteristics of Memory Hierarchy
+                </h1>
+
+                <div className=" p-5 mt-2 grid lg:grid-cols-2 gap-5">
+                  <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                    <strong>Capacity</strong> the volume of information that a
+                    memory device can store. As we move down the memory pyramid,
+                    the capacity or memory size increases.
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                    <strong>Access time</strong> Access time is the time
+                    interval from when a read/write request is made and when the
+                    data actually becomes available. It increases as we move
+                    from the top to the bottom of the memory hierarchy
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                    <strong>Performance</strong> Without a memory hierarchy,
+                    there is a speed gap between CPU registers and the main
+                    memory. This increases access time and directly impacts the
+                    system's performance.
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
+                    <strong>Cost per bit:</strong> The cost per bit is
+                    calculated by dividing the total cost of the memory by the
+                    total number of accessed bits. As we move from the top of
+                    the memory hierarchy to the bottom, the cost per bit
+                    decreases. This is because internal memory is costlier than
+                    external memory.
+                  </p>
                 </div>
               </div>
             </div>
