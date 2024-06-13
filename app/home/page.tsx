@@ -82,7 +82,7 @@ export default async function Page() {
               </Link>
 
               <Link
-                href={"/courses/prelim"}
+                href={"/courses/pre-final"}
                 className="bg-[#81BC87] transition-all duration-300 w-full p-5 rounded-lg mt-4 cursor-pointer hover:bg-[#5f8b64]"
               >
                 <p className="text-white font-bold text-[25px] max-[320px]:text-[18px]">
