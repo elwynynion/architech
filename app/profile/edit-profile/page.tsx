@@ -5,11 +5,10 @@ import Image from "next/image";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
+
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -34,11 +33,7 @@ const formSchema = z.object({
 });
 
 function Page() {
-  const [profilePic, setProfilePic] = useState(null);
-  const handleProfilePicChange = (event: any) => {
-    const file = event.target.files[0];
-    setProfilePic(file);
-  };
+  const [base64Image, setBase64Image] = useState("");
   const { data: session, status, update }: any = useSession();
   const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
@@ -47,7 +42,7 @@ function Page() {
       username: session?.user?.userName || "",
       firstname: session?.user?.firstName || "",
       lastname: session?.user?.lastName || "",
-      profilepic: profilePic || "",
+      profilepic: session?.user?.lastName || "",
       email: session?.user?.email || "",
       bio: session?.user?.bio || "",
       courses: session?.user?.courses || "",
@@ -56,9 +51,21 @@ function Page() {
       github: session?.user?.github || "",
     },
   });
+  const handleFileChange = (e: any) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      if (typeof reader.result === "string") {
+        setBase64Image(reader.result);
+      }
+    };
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  };
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
-    console.log(profilePic);
+
     try {
       const response = await fetch("/api/edit-profile", {
         method: "PATCH",
@@ -69,7 +76,7 @@ function Page() {
           username: values.username || session?.user?.userName,
           firstname: values.firstname || session?.user?.firstName,
           lastname: values.lastname || session?.user?.lastName,
-          profilepic: profilePic || session?.user?.profilepic,
+          profilepic: base64Image || session?.user?.profilepic,
           bio: values.bio || session?.user?.bio,
           courses: values.courses || session?.user?.courses,
           facebook: values.facebook || session?.user?.facebook,
@@ -139,22 +146,22 @@ function Page() {
                       </div>
                       <Image
                         src={
-                          profilePic
-                            ? URL.createObjectURL(profilePic)
-                            : "/elements/Avatar2.png"
+                          base64Image
+                            ? base64Image
+                            : session.user?.profilepic ||
+                              "/elements/Avatar2.png"
                         }
                         alt="avatar"
                         width={150}
                         height={150}
-                        className="mb-2 rounded-full"
+                        className="mb-2 rounded-full object-cover object-top w-[150px] h-[150px]"
                       />
-                      <div className="flex flex-col max-w-[140px] w-full space-y-2 text-black">
+                      <div className="flex flex-col max-w-[140px] w-full space-y-2 text-black ">
                         <Input
                           type="file"
                           accept="image/*"
-                          onChange={handleProfilePicChange}
-                          placeholder={session.user?.profilepic}
                           className="max-w-[150px] w-full"
+                          onChange={handleFileChange}
                         />
                       </div>
                     </div>

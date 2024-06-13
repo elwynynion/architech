@@ -16,6 +16,10 @@ import Link from "next/link";
 
 function Page() {
   const { data: session, status }: any = useSession();
+
+  if (!session) {
+    redirect("/");
+  }
   if (status === "loading") {
     return (
       <div role="status" className="h-[100vh] flex justify-center items-center">
@@ -39,10 +43,6 @@ function Page() {
       </div>
     );
   }
-  if (!session) {
-    redirect("/");
-  }
-
   return (
     <div className="bg-[#FFFEFA] h-[100vh]">
       <div className="container">
@@ -50,27 +50,25 @@ function Page() {
         <div>
           <div className="bg-[#81BC87] h-[150px] w-full border-4 border-[#4F7853] rounded-xl relative">
             <Image
-              src="/elements/Avatar2.png"
+              src={session.user?.profilepic || "/elements/Avatar2.png"}
               alt="avatar"
               width={150}
               height={150}
-              className="rounded-full border-4 border-[#4F7853] absolute bottom-[-70px] left-5"
+              className="rounded-full object-cover object-top w-[150px] h-[150px] border-4 border-[#4F7853] absolute bottom-[-70px] left-5 max-[440px]:w-[120px] max-[440px]:h-[120px] max-[440px]:left-[60px]"
             />
           </div>
-          <div className="flex items-center">
-            <div className="text-[#4F7853] mt-[65px] ml-7 mr-auto">
+          <div className="flex items-center max-[440px]:flex-col max-[440px]:items-stretch">
+            <div className="text-[#4F7853] mt-[65px] ml-7 mr-auto max-[440px]:text-center max-[440px]:mx-auto">
               <p className="font-bold text-[25px]">
                 {session.user?.firstname} {session.user?.lastname}
               </p>
-              <p className="font-semibold text-[20px]">
-                @{session.user?.username}
-              </p>
+              <p className="font-semibold">@{session.user?.username}</p>
               <p>{session.user?.bio}</p>
             </div>
             <div className="flex flex-col space-y-2 mt-4 font-bold">
               <Link
                 href="/profile/edit-profile"
-                className="border-2 text-[#4F7853]  border-[#4F7853] py-1 px-9 rounded-md hover:bg-[#4F7853] hover:text-white transition-all duration-300"
+                className="border-2 text-center text-[#4F7853]  border-[#4F7853] py-1 px-9 rounded-md hover:bg-[#4F7853] hover:text-white transition-all duration-300"
               >
                 Edit Profile
               </Link>
