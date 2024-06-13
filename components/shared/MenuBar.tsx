@@ -13,7 +13,7 @@ function MenuBar({ isVisible, toggleMenu, name }: MenuBarProps) {
   const { data: session }: any = useSession();
   return (
     <div
-      className={`text-center fixed box-border z-50 bg-[#FAF6E9] max-[650px]:flex flex-col top-0 right-0 h-full transition-all duration-500 ${
+      className={`text-center fixed box-border z-50 bg-[#FAF6E9] max-[750px]:flex flex-col top-0 right-0 h-full transition-all duration-500 ${
         isVisible ? "w-full" : "w-0"
       }`}
     >
@@ -25,6 +25,32 @@ function MenuBar({ isVisible, toggleMenu, name }: MenuBarProps) {
           height={33}
         />
       </button>
+      {session && (
+        <>
+          <Link
+            className="relative text-[#4F7853] text-[20px] py-1 px-2 m-4 rounded-md font-bold group"
+            href={"/home"}
+          >
+            Home
+            <div
+              className={`bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
+                name === "home" && "opacity-100"
+              }`}
+            ></div>
+          </Link>
+          <Link
+            className="relative text-[#4F7853] text-[20px] py-1 px-2 m-4 rounded-md font-bold group"
+            href={"/courses"}
+          >
+            Courses
+            <div
+              className={`bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100 ${
+                name === "courses" && "opacity-100"
+              }`}
+            ></div>
+          </Link>
+        </>
+      )}
       <Link
         className="relative text-[#4F7853] text-[20px] py-1 px-2 m-4 rounded-md font-bold group"
         href={"/about"}
@@ -50,7 +76,7 @@ function MenuBar({ isVisible, toggleMenu, name }: MenuBarProps) {
       {!session ? (
         <Link
           className="relative text-[#4F7853] text-[20px] py-1 px-2 m-4 rounded-md font-bold group"
-          href={"/"}
+          href={"/login"}
         >
           Log In
           <div className="bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100"></div>
@@ -59,10 +85,14 @@ function MenuBar({ isVisible, toggleMenu, name }: MenuBarProps) {
         <>
           <Link
             className="relative text-[#4F7853] text-[20px] py-1 px-2 m-4 rounded-md font-bold group"
-            href={"/"}
+            href={"/profile"}
           >
             Profile
-            <div className="bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100"></div>
+            <div
+              className={`${
+                name === "profile" && "opacity-100"
+              } bg-[#4F7853] h-1 absolute left-2 right-2 bottom-0 opacity-0 group-hover:opacity-100`}
+            ></div>
           </Link>
           <button
             className="relative text-[#4F7853] text-[20px] py-1 px-2 m-4 rounded-md font-bold group"

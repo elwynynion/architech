@@ -11,6 +11,7 @@ export default function Page() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
+
   function isValidEmail(email: string) {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     return emailRegex.test(email);
@@ -22,11 +23,12 @@ export default function Page() {
       toast({
         title: "Registering...",
       });
-
     e.preventDefault();
+
     const username = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
+
     if (!isValidEmail(email)) {
       setError("Invalid Email");
       return;
