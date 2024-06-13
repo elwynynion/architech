@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "@/components/shared/Navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 function page() {
   return (
@@ -19,10 +20,10 @@ function page() {
 
           <div className="border-[1px] border-[#4F7853] mb-5"></div>
 
-          <div className="font-bold text-[#4F7853] text-4xl mt-10 mb-3">
+          <div className="font-bold text-[#4F7853] text-4xl mt-12 ml-4 mb-3">
             Computer Hardware
           </div>
-          <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc ml-5">
+          <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc mx-4 p-4">
             These are physical components of computer system (external and
             internal devices and equipment) that performs major functions such
             as input, output, storage, communication, transfer of digital data
@@ -34,8 +35,8 @@ function page() {
           </div>
 
           <div className="grid grid-cols-2 max-[1330px]:grid-cols-1 gap-x-[50px] gap-y-[30px]">
-            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] w-[40%]">
+            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/cpu.jpeg"
@@ -46,7 +47,7 @@ function page() {
                   />
                 </div>
               </div>
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Central Processing Unit (CPU)
                 </p>
@@ -59,8 +60,8 @@ function page() {
               </div>
             </div>
 
-            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] border-[#4F7853] w-[40%]">
+            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] border-[#4F7853] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/motherboard.jpg"
@@ -71,7 +72,7 @@ function page() {
                   />
                 </div>
               </div>
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Motherboard
                 </p>
@@ -84,8 +85,8 @@ function page() {
               </div>
             </div>
 
-            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] border-[#4F7853] w-[40%]">
+            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] border-[#4F7853] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/ram.jpg"
@@ -97,7 +98,7 @@ function page() {
                 </div>
               </div>
 
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Random Access Memory Card (RAM)
                 </p>
@@ -110,8 +111,8 @@ function page() {
               </div>
             </div>
 
-            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] border-[#4F7853] w-[40%]">
+            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] border-[#4F7853] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/gpu.jpg"
@@ -123,7 +124,7 @@ function page() {
                 </div>
               </div>
 
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Graphics Processing Unit (GPU)
                 </p>
@@ -138,7 +139,7 @@ function page() {
           </div>
 
           <div className="flex justify-center mt-6">
-            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] max-w-[700px] w-full mb-5 flex max-[700px]:flex-col shadow-xl">
+            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-w-[700px] max-[700px]:flex-col shadow-xl">
               <div className="border-[0px] border-[#4F7853] w-[40%] max-[700px]:w-full">
                 <Image
                   src="/midterm-img/psu.jpg"
@@ -168,8 +169,8 @@ function page() {
           </div>
 
           <div className="grid grid-cols-2 max-[1330px]:grid-cols-1 gap-x-[50px] gap-y-[30px]">
-            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] w-[40%]">
+            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/hdd.jpg"
@@ -181,7 +182,7 @@ function page() {
                 </div>
               </div>
 
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Hard Disk Drive (HDD)
                 </p>
@@ -194,8 +195,8 @@ function page() {
               </div>
             </div>
 
-            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] w-[40%]">
+            <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/ssd.jpg"
@@ -207,7 +208,7 @@ function page() {
                 </div>
               </div>
 
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Solid State Drive (SSD)
                 </p>
@@ -227,8 +228,8 @@ function page() {
           </div>
 
           <div className="grid grid-cols-2 max-[1330px]:grid-cols-1 gap-x-[50px] gap-y-[30px]">
-            <div className="border-[1px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] w-[40%]">
+            <div className="border-[1px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/monitor.jpg"
@@ -240,7 +241,7 @@ function page() {
                 </div>
               </div>
 
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Monitor
                 </p>
@@ -255,8 +256,8 @@ function page() {
               </div>
             </div>
 
-            <div className="border-[1px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] w-[40%]">
+            <div className="border-[1px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/mouse.jpg"
@@ -268,7 +269,7 @@ function page() {
                 </div>
               </div>
 
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Mouse
                 </p>
@@ -282,8 +283,8 @@ function page() {
               </div>
             </div>
 
-            <div className="border-[1px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] w-[40%]">
+            <div className="border-[1px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/keyboard.jpg"
@@ -295,7 +296,7 @@ function page() {
                 </div>
               </div>
 
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Keyboard
                 </p>
@@ -309,8 +310,8 @@ function page() {
               </div>
             </div>
 
-            <div className="border-[1px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex shadow-xl">
-              <div className="border-[0px] w-[40%]">
+            <div className="border-[1px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
+              <div className="border-[0px] w-[40%] max-[700px]:w-full">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/speakers.jpg"
@@ -321,7 +322,7 @@ function page() {
                   />
                 </div>
               </div>
-              <div className="w-[60%] p-4">
+              <div className="w-[60%] p-4 max-[700px]:w-full">
                 <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Speakers
                 </p>
@@ -340,7 +341,7 @@ function page() {
               <div className="border-[0px] w-[40%] max-[700px]:w-full">
                 <Image
                   src="/midterm-img/microphone.jpg"
-                  width={350}
+                  width={9999}
                   height={999}
                   alt=""
                   className="w-full h-full object-cover rounded-[20px]"
@@ -371,7 +372,7 @@ function page() {
                   <div className="h-full">
                     <Image
                       src="/midterm-img/vacuum.jpg"
-                      width={400}
+                      width={9999}
                       height={999}
                       alt=""
                       className="w-full h-full object-cover"
@@ -380,7 +381,7 @@ function page() {
                   <div className="h-full">
                     <Image
                       src="/midterm-img/fleming.jpg"
-                      width={400}
+                      width={9999}
                       height={999}
                       alt=""
                       className="w-full h-full object-cover"
@@ -1133,60 +1134,66 @@ function page() {
             </div>
           </div>
 
-          <div className="font-bold text-[#4F7853] text-2xl mt-8">History</div>
-          <div className="grid grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
-            <p className="text-[#4F7853] text-xl p-2">
-              {" "}
-              <span className="font-bold text-[#4F7853] text-2xl">
-                Origins (Mid-20th Century)
-              </span>
-              <br />
-              The roots of computer AI can be traced back to the mid-20th
-              century when researchers began exploring the possibility of
-              creating machines that could exhibit intelligent behavior.
-              Pioneers like Alan Turing, Warren McCulloch, and Walter Pitts laid
-              the theoretical groundwork for AI, proposing models of artificial
-              neurons and exploring the concept of machine intelligence.
-            </p>
-            <p className="text-[#4F7853] text-xl p-2">
-              {" "}
-              <span className="font-bold text-[#4F7853] text-2xl">
-                Early Developments (1950s-1960s)
-              </span>
-              <br />
-              The 1950s and 1960s saw significant advancements in AI research,
-              with Alan Turing proposing the Turing Test in 1950 as a criterion
-              for machine intelligence. John McCarthy coined the term
-              "artificial intelligence" in 1956 and developed the first AI
-              programming language, LISP, in the 1960s. Early AI systems focused
-              on rule-based approaches and symbolic reasoning.
-            </p>
-            <p className="text-[#4F7853] text-xl p-2">
-              {" "}
-              <span className="font-bold text-[#4F7853] text-2xl">
-                AI Winter (1970s-1980s)
-              </span>
-              <br />
-              Despite initial optimism, the field of AI faced challenges and
-              setbacks during the 1970s and 1980s, leading to a period known as
-              the "AI winter." Progress was slower than anticipated, and funding
-              for AI research declined due to unrealistic expectations and
-              disappointments with early AI systems.
-            </p>
-            <p className="text-[#4F7853] text-xl p-2">
-              {" "}
-              <span className="font-bold text-[#4F7853] text-2xl">
-                Resurgence (1990s-Present)
-              </span>
-              <br />
-              The 1990s saw a resurgence of interest in AI fueled by advances in
-              computing power and machine learning techniques. Researchers
-              developed more sophisticated algorithms for tasks such as pattern
-              recognition, data mining, and natural language processing. Recent
-              years have witnessed exponential growth in AI applications, driven
-              by advancements in deep learning, which uses artificial neural
-              networks to process complex data structures.
-            </p>
+          <div className="p-7">
+            <div className="font-bold text-[#4F7853] text-2xl mt-8">
+              History
+            </div>
+            <div className="grid grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
+              <p className="text-[#4F7853] text-xl p-2">
+                {" "}
+                <span className="font-bold text-[#4F7853] text-2xl">
+                  Origins (Mid-20th Century)
+                </span>
+                <br />
+                The roots of computer AI can be traced back to the mid-20th
+                century when researchers began exploring the possibility of
+                creating machines that could exhibit intelligent behavior.
+                Pioneers like Alan Turing, Warren McCulloch, and Walter Pitts
+                laid the theoretical groundwork for AI, proposing models of
+                artificial neurons and exploring the concept of machine
+                intelligence.
+              </p>
+              <p className="text-[#4F7853] text-xl p-2">
+                {" "}
+                <span className="font-bold text-[#4F7853] text-2xl">
+                  Early Developments (1950s-1960s)
+                </span>
+                <br />
+                The 1950s and 1960s saw significant advancements in AI research,
+                with Alan Turing proposing the Turing Test in 1950 as a
+                criterion for machine intelligence. John McCarthy coined the
+                term "artificial intelligence" in 1956 and developed the first
+                AI programming language, LISP, in the 1960s. Early AI systems
+                focused on rule-based approaches and symbolic reasoning.
+              </p>
+              <p className="text-[#4F7853] text-xl p-2">
+                {" "}
+                <span className="font-bold text-[#4F7853] text-2xl">
+                  AI Winter (1970s-1980s)
+                </span>
+                <br />
+                Despite initial optimism, the field of AI faced challenges and
+                setbacks during the 1970s and 1980s, leading to a period known
+                as the "AI winter." Progress was slower than anticipated, and
+                funding for AI research declined due to unrealistic expectations
+                and disappointments with early AI systems.
+              </p>
+              <p className="text-[#4F7853] text-xl p-2">
+                {" "}
+                <span className="font-bold text-[#4F7853] text-2xl">
+                  Resurgence (1990s-Present)
+                </span>
+                <br />
+                The 1990s saw a resurgence of interest in AI fueled by advances
+                in computing power and machine learning techniques. Researchers
+                developed more sophisticated algorithms for tasks such as
+                pattern recognition, data mining, and natural language
+                processing. Recent years have witnessed exponential growth in AI
+                applications, driven by advancements in deep learning, which
+                uses artificial neural networks to process complex data
+                structures.
+              </p>
+            </div>
           </div>
 
           <div className="bg-[#FAF6F9] mt-10 mb-[10px] rounded-[20px] p-4 pb-4 shadow-xl">
@@ -1392,11 +1399,11 @@ function page() {
             </div>
           </div>
 
-          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-3 pb-4 shadow-xl">
+          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-4 shadow-xl">
             <p className="font-bold text-[#4F7853] text-3xl mb-3">
               Central Processing Unit (CPU)
             </p>
-            <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
+            <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-4">
               <p>
                 The CPU, or Central Processing Unit, is the primary component of
                 a computer responsible for executing instructions, performing
@@ -1437,24 +1444,26 @@ function page() {
             </ul>
           </div>
 
-          <div className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">
-            Registers
-          </div>
-          <div className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
-            Computer registers are small, high-speed storage locations within
-            the CPU that hold temporary data, instructions, and memory addresses
-            needed for program execution. They include the Program Counter (PC)
-            for storing the next instruction address, Instruction Register (IR)
-            for holding the current instruction, Memory Address Register (MAR)
-            for storing memory addresses, Memory Data Register (MDR) for holding
-            data read from or written to memory, General-Purpose Registers for
-            temporary data storage, and Status Register for holding flags
-            indicating the outcome of arithmetic and logical operations.
-            Registers play a crucial role in facilitating efficient execution of
-            programs by the CPU.
+          <div className="p-7">
+            <div className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">
+              Registers
+            </div>
+            <div className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
+              Computer registers are small, high-speed storage locations within
+              the CPU that hold temporary data, instructions, and memory
+              addresses needed for program execution. They include the Program
+              Counter (PC) for storing the next instruction address, Instruction
+              Register (IR) for holding the current instruction, Memory Address
+              Register (MAR) for storing memory addresses, Memory Data Register
+              (MDR) for holding data read from or written to memory,
+              General-Purpose Registers for temporary data storage, and Status
+              Register for holding flags indicating the outcome of arithmetic
+              and logical operations. Registers play a crucial role in
+              facilitating efficient execution of programs by the CPU.
+            </div>
           </div>
 
-          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-3 pb-4 shadow-xl">
+          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-6 shadow-xl">
             <p className="font-bold text-[#4F7853] text-3xl mb-3">
               Main Memory
             </p>
@@ -1473,21 +1482,25 @@ function page() {
             </p>
           </div>
 
-          <p className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">Clock</p>
-          <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
-            In a microprocessor, the clock signal is a regular electrical pulse
-            that coordinates the timing of operations within the CPU and the
-            entire system. It regulates the flow of data and instructions,
-            ensuring that they are processed in the correct sequence and at the
-            appropriate speed. The clock signal synchronizes the activities of
-            different CPU components, such as instruction execution and data
-            transfer, by dividing time into fixed intervals known as clock
-            cycles. Overall, the clock signal plays a crucial role in
-            maintaining the orderly operation of the microprocessor and
-            facilitating efficient processing of instructions and data.
-          </p>
+          <div className="p-7">
+            <div className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">
+              Clock
+            </div>
+            <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-4">
+              In a microprocessor, the clock signal is a regular electrical
+              pulse that coordinates the timing of operations within the CPU and
+              the entire system. It regulates the flow of data and instructions,
+              ensuring that they are processed in the correct sequence and at
+              the appropriate speed. The clock signal synchronizes the
+              activities of different CPU components, such as instruction
+              execution and data transfer, by dividing time into fixed intervals
+              known as clock cycles. Overall, the clock signal plays a crucial
+              role in maintaining the orderly operation of the microprocessor
+              and facilitating efficient processing of instructions and data.
+            </p>
+          </div>
 
-          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-3 pb-4 shadow-xl">
+          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-4 shadow-xl">
             <p className="font-bold text-[#4F7853] text-3xl mb-3">
               Input/Output Devices
             </p>
@@ -1502,22 +1515,24 @@ function page() {
             </p>
           </div>
 
-          <p className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">
-            Input/Output Interfaces
-          </p>
-          <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
-            Input/output (I/O) interfaces serve as connectors between
-            input/output devices and the computer system, enabling data
-            exchange. Hardware interfaces include ports and connectors, while
-            software interfaces consist of device drivers and APIs. These
-            interfaces facilitate communication, manage data flow, and ensure
-            compatibility between devices and the computer system. Overall, I/O
-            interfaces play a crucial role in enabling the functionality of
-            input/output devices and simplifying the interaction between
-            software and hardware components.
-          </p>
+          <div className="p-7">
+            <div className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">
+              Input/Output Interfaces
+            </div>
+            <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
+              Input/output (I/O) interfaces serve as connectors between
+              input/output devices and the computer system, enabling data
+              exchange. Hardware interfaces include ports and connectors, while
+              software interfaces consist of device drivers and APIs. These
+              interfaces facilitate communication, manage data flow, and ensure
+              compatibility between devices and the computer system. Overall,
+              I/O interfaces play a crucial role in enabling the functionality
+              of input/output devices and simplifying the interaction between
+              software and hardware components.
+            </p>
+          </div>
 
-          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-3 pb-4 shadow-xl">
+          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-4 shadow-xl">
             <p className="font-bold text-[#4F7853] text-3xl mb-3">
               Direct Memory Access
             </p>
@@ -1532,19 +1547,23 @@ function page() {
             </p>
           </div>
 
-          <p className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">Bus</p>
-          <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
-            Bus is a communication system that allows different components
-            within the CPU and the computer system to exchange data and
-            instructions. It consists of various types of buses, including the
-            data bus, address bus, and control bus, each serving specific
-            functions. The bus width determines the amount of data transferred
-            simultaneously, while bus speed and bandwidth affect overall system
-            performance. Bus arbitration mechanisms are used in multi-master
-            systems to manage access to the bus.
-          </p>
+          <div className="p-7">
+            <div className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">
+              Bus
+            </div>
+            <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
+              Bus is a communication system that allows different components
+              within the CPU and the computer system to exchange data and
+              instructions. It consists of various types of buses, including the
+              data bus, address bus, and control bus, each serving specific
+              functions. The bus width determines the amount of data transferred
+              simultaneously, while bus speed and bandwidth affect overall
+              system performance. Bus arbitration mechanisms are used in
+              multi-master systems to manage access to the bus.
+            </p>
+          </div>
 
-          <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
+          <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc mx-6 px-8">
             <li className="mt-5">
               <span className="font-bold">Data Bus</span> The Data Bus transfers
               data between a computer’s memory and its CPU, which operates as
@@ -1571,7 +1590,7 @@ function page() {
             </li>
           </ul>
 
-          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-3 pb-4 shadow-xl">
+          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-4 shadow-xl">
             <div className="font-bold text-[#4F7853] text-4xl mb-10 text-center">
               Registers
             </div>
@@ -1604,13 +1623,14 @@ function page() {
           <div className="font-bold text-[#4F7853] text-3xl mt-20 ml-5 mb-3">
             Sizes of CPU Registers
           </div>
-          <p className="text-[#4F7853] text-xl ml-6 pr-8">
+          <p className="text-[#4F7853] text-xl mx-6 px-8">
             The number and size of registers in a CPU are determined by the
             processor design and can have a significant impact on its
             performance and capabilities. Most modern computer processers
             include:
           </p>
-          <div className="grid grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[20px] w-[100%] h-full p-2 mt-8">
+
+          <div className="grid grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[20px] w-[100%] h-full p-6 mt-8">
             <p className="text-[#4F7853] text-xl p-2">
               {" "}
               <span className="font-bold text-[#4F7853] text-2xl">
@@ -1652,8 +1672,8 @@ function page() {
             </p>
           </div>
 
-          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-3 pb-4 shadow-xl">
-            <div className="font-bold text-[#4F7853] text-3xl ml-6 pr-8 mb-3">
+          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-4 shadow-xl">
+            <div className="font-bold text-[#4F7853] text-3xl mb-3">
               Kinds of Registers
             </div>
             <p className="text-[#4F7853] text-xl ml-6 pr-8">
@@ -1663,7 +1683,7 @@ function page() {
               types of registers found in a CPU may include:
             </p>
 
-            <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full mt-8 ml-5 pr-8">
+            <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full mt-8 px-8">
               <p className="text-[#4F7853] text-xl p-2">
                 <span className="font-bold text-[#4F7853] text-2xl text-center mb-4">
                   Program Counter (PC)
@@ -1749,20 +1769,20 @@ function page() {
           <div className="font-bold text-[#4F7853] text-4xl mt-20 mb-10 text-center">
             CPU Architecture
           </div>
-          <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc ml-6 pr-8">
+          <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc mx-6 px-12">
             Generally, an architecture defines what an object looks like,
             behaves, processes, and responds. In the aspect of computers, it
             defines how a processor operates through hardware/software and how
             it is being handled by the user.
           </p>
 
-          <div className="flex justify-center mt-10">
-            <div className="relative w-[800px]">
+          <div className="flex justify-center mt-20">
+            <div className="relative w-[45%]">
               <div className="outline outline-[#4F7853] w-full h-full absolute top-[-8px] rounded-[20px] right-[8px] z-0 shadow-2xl"></div>
               <div className="flex justify-center relative">
                 <Image
                   src="/midterm-img/components.jpg"
-                  width={1200}
+                  width={4000}
                   height={100}
                   alt=""
                   className="w-full h-auto object-contain sm:w-auto md:w-auto lg:w-auto xl:w-auto rounded-[20px]"
@@ -1771,7 +1791,7 @@ function page() {
             </div>
           </div>
 
-          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-3 pb-4 shadow-xl">
+          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-4 shadow-xl">
             <p className="font-bold text-[#4F7853] text-3xl mb-3">
               Von Neumann Architecture
             </p>
@@ -1785,7 +1805,7 @@ function page() {
             </p>
 
             <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8  ">
-              <li className="mt-2">
+              <li className="mt-4">
                 <span className="font-bold">
                   Central Processing Unit (CPU):{" "}
                 </span>{" "}
@@ -1794,23 +1814,23 @@ function page() {
                 controls the flow of data, and manages the execution of
                 programs.
               </li>
-              <li className="mt-2">
+              <li className="mt-4">
                 <span className="font-bold">Memory: </span> In von Neumann
                 architecture, both program instructions and data are stored in
                 the same memory. This memory is accessed by the CPU to fetch
                 instructions and data for processing.
               </li>
-              <li className="mt-2">
+              <li className="mt-4">
                 <span className="font-bold">Control Unit: </span> The control
                 unit is responsible for fetching instructions from memory,
                 decoding them, and executing them in the CPU.
               </li>
-              <li className="mt-2">
+              <li className="mt-4">
                 <span className="font-bold">Arithmetic Logic Unit (ALU): </span>{" "}
                 The ALU performs arithmetic and logical operations on the data
                 fetched from memory.
               </li>
-              <li className="mt-2">
+              <li className="mt-4">
                 <span className="font-bold">Input/Output (I/O) devices: </span>{" "}
                 These devices facilitate the interaction between the computer
                 and the external world. They include peripherals such as
@@ -1819,44 +1839,47 @@ function page() {
             </ul>
           </div>
 
-          <p className="font-bold text-[#4F7853] text-3xl mt-20 pr-8 mb-3">
-            Harvard Architecture
-          </p>
-          <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
-            Harvard architecture, which is another computer architecture design
-            distinct from the von Neumann architecture. In the Harvard
-            architecture, program instructions and data are stored in separate
-            memory units, which allows for simultaneous access to instructions
-            and data. This separation helps overcome some of the limitations of
-            the von Neumann architecture, such as the bottleneck caused by
-            having a single memory for both instructions and data.
-          </p>
+          <div className="p-7">
+            <div className="font-bold text-[#4F7853] text-3xl mt-20 pr-8 mb-3">
+              Harvard Architecture
+            </div>
+            <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
+              Harvard architecture, which is another computer architecture
+              design distinct from the von Neumann architecture. In the Harvard
+              architecture, program instructions and data are stored in separate
+              memory units, which allows for simultaneous access to instructions
+              and data. This separation helps overcome some of the limitations
+              of the von Neumann architecture, such as the bottleneck caused by
+              having a single memory for both instructions and data.
+            </p>
 
-          <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc mt-8 ml-6 pr-8">
-            <li className="mt-2">
-              <span className="font-bold">Instruction Memory: </span> This
-              memory unit stores program instructions separately from data
-              memory. The CPU fetches instructions from this memory for
-              execution.
-            </li>
-            <li className="mt-2">
-              <span className="font-bold">Data Memory: </span> Data used by the
-              program is stored in a separate memory unit. The CPU accesses this
-              memory for reading and writing data during program execution.
-            </li>
-            <li className="mt-2">
-              <span className="font-bold">Control Unit: </span> Similar to von
-              Neumann architecture, the control unit manages the execution of
-              instructions fetched from the instruction memory.
-            </li>
-            <li className="mt-2">
-              <span className="font-bold">Arithmetic Logic Unit (ALU): </span>{" "}
-              The ALU performs arithmetic and logical operations on data fetched
-              from the data memory.
-            </li>
-          </ul>
+            <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc mt-8 ml-6 pr-8">
+              <li className="mt-2">
+                <span className="font-bold">Instruction Memory: </span> This
+                memory unit stores program instructions separately from data
+                memory. The CPU fetches instructions from this memory for
+                execution.
+              </li>
+              <li className="mt-2">
+                <span className="font-bold">Data Memory: </span> Data used by
+                the program is stored in a separate memory unit. The CPU
+                accesses this memory for reading and writing data during program
+                execution.
+              </li>
+              <li className="mt-2">
+                <span className="font-bold">Control Unit: </span> Similar to von
+                Neumann architecture, the control unit manages the execution of
+                instructions fetched from the instruction memory.
+              </li>
+              <li className="mt-2">
+                <span className="font-bold">Arithmetic Logic Unit (ALU): </span>{" "}
+                The ALU performs arithmetic and logical operations on data
+                fetched from the data memory.
+              </li>
+            </ul>
+          </div>
 
-          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-3 pb-4 shadow-xl">
+          <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-4 shadow-xl">
             <div className="font-bold text-[#4F7853] text-4xl mb-10 text-center">
               Instruction Set Architecture
             </div>
@@ -1881,29 +1904,31 @@ function page() {
             </ul>
           </div>
 
-          <p className="font-bold text-[#4F7853] text-3xl mt-16 mb-3">
-            Two (2) Types of ISA
-          </p>
-          <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
-            <li className="mt-2">
-              <span className="font-bold">
-                Complex Instruction Set Computer{" "}
-              </span>{" "}
-              It is a computer where single instructions can execute several
-              low-level operations (such as a load from memory, an arithmetic
-              operation, and a memory store) or can do multi-step operations or
-              address modes within single instructions. Example: x86-x64
-              processors (Intel).
-            </li>
-            <li className="mt-2">
-              <span className="font-bold">
-                Reduced Instruction Set Computer{" "}
-              </span>{" "}
-              It is a computer which only uses simple instructions that can be
-              divided into multiple instructions and perform low-level
-              operations within a single clock cycle. Example: ARM (iPhone)
-            </li>
-          </ul>
+          <div className="p-7">
+            <div className="font-bold text-[#4F7853] text-3xl mt-16 mb-3">
+              Two (2) Types of ISA
+            </div>
+            <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
+              <li className="mt-2">
+                <span className="font-bold">
+                  Complex Instruction Set Computer{" "}
+                </span>{" "}
+                It is a computer where single instructions can execute several
+                low-level operations (such as a load from memory, an arithmetic
+                operation, and a memory store) or can do multi-step operations
+                or address modes within single instructions. Example: x86-x64
+                processors (Intel).
+              </li>
+              <li className="mt-2">
+                <span className="font-bold">
+                  Reduced Instruction Set Computer{" "}
+                </span>{" "}
+                It is a computer which only uses simple instructions that can be
+                divided into multiple instructions and perform low-level
+                operations within a single clock cycle. Example: ARM (iPhone)
+              </li>
+            </ul>
+          </div>
 
           <div className="flex justify-center mt-10">
             <div className="relative w-[800px]">
@@ -1920,9 +1945,9 @@ function page() {
             </div>
           </div>
 
-          <p className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">
+          <div className="font-bold text-[#4F7853] text-3xl mt-20 mb-3 p-6">
             Microprosessor Operations
-          </p>
+          </div>
           <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
             <li className="mt-2">
               <span className="font-bold">Fetch </span> – It is designed to
@@ -1998,275 +2023,7 @@ function page() {
             </div>
           </div>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
-          <div className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5">
-            One kind of storage medium that keeps data permanently is read-only
-            memory (ROM). This often includes the programming required for a
-            device to boot up. Information can only be "read" from this kind of
-            memory. It retains data indefinitely, even when the ROM is not
-            powered. Any stateful memory that remains after a live user session
-            end can be referred to as non-volatile memory.
-          </div>
-
-          <div className="font-bold text-[#4F7853] text-xl mt-10 mb-3">
-            Types of ROM
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 place-items-start md:place-items-center mt-4">
-            <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5">
-              <li>
-                <span className="font-bold">Programmable ROM (PROM)</span> is a
-                memory chip that allows data to be written just once. The PROM
-                is a sensitive material that is easily destroyed, leaving it
-                unusable if the information is stored incorrectly. Programming
-                ROM, also known as burning ROM, uses a specialized equipment
-                known as a ROM burner or ROM programmer.
-              </li>
-              <li className="mt-3">
-                <span className="font-bold">Erasable PROMs (EPROMs)</span>can be
-                erased with ultraviolet light and reprogrammed using an EPROM
-                programmer.
-                <br />
-                <span className="font-bold">
-                  Ultraviolet Erasable PROM (UV-EPROM)
-                </span>{" "}
-                A popular form of EPROM. To erase the contents of a UV-EPROM, it
-                needs to be exposed to UV rays for 5-20 minutes through a window
-                on the chip. However, the problem with UV-EPROM is that it
-                cannot be deleted or written when on the system board. EEPROM
-                was designed to address this issue.
-              </li>
-            </ul>
-
-            <div className="border-4 border-[#4F7853] rounded-[35px] p-2 sm:w-[300px] sm:h-[200px] md:w-[300px] md:h-[160px] lg:w-[450px] lg:h-[250px] xl:w-[600px] xl:h-[300px]">
-              <div className="p-4">
-                <Image
-                  src="/midterm-img/1.png"
-                  width={700}
-                  height={10}
-                  alt=""
-                  className="w-full h-full object-cover sm:w-auto md:w-auto lg:w-auto xl:w-auto"
-                />
-              </div>
-            </div>
-          </div>
-
-          <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5 mt-2">
-            <li className="mt-4">
-              <span className="font-bold">Electrically EPROM (EEPROM)</span>can
-              be erased by applying specific voltage to one of its pins and can
-              be reprogrammed with an EPROM programmer. EEPROM has various
-              advantages over EPROM, including the fact that it erases
-              electrically and hence instantly, as opposed to UV-EPROM's
-              20-minute erasing period. Furthermore, unlike UV-EPROM, which
-              erases the full contents of the ROM, EEPROM allows the user to
-              decide which byte to erase. Example: NAND Flash Memory and BIOS
-              <br />
-              <span className="font-bold"> Flash Memory</span> Flash ROM was
-              originally designed to allow changes to the contents of PROM after
-              it has been burned. It is a nonvolatile memory that has a wide
-              range of applications such as flash drive, solid-state drive,
-              memory card, and embedded system. It is a type of EEPROM that
-              allows multiple memory location to be written or erased on one (1)
-              operation. The main difference between EEPROM and Flash memory is
-              that when the contents of Flash memory are erased, the entire
-              device is deleted, as opposed to EEPROM, which allows one to erase
-              only a specified byte. There are two (2) types of technology used
-              for flash memory: NAND and NOR flash memories. NAND flash memory
-              has less access time than NOR flash memory. Most flash memories
-              use NAND technology.
-            </li>
-          </ul>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-start md:place-items-center mt-4">
-            <div className="flex justify-center items-center border-4 border-[#4F7853] rounded-[35px] mt-[50px] p-2 sm:w-[300px] sm:h-[200px] md:w-[300px] md:h-[160px] lg:w-[450px] lg:h-[250px] xl:w-[600px] xl:h-[300px]">
-              <div className="p-4">
-                <Image
-                  src="/midterm-img/image2.png"
-                  width={350}
-                  height={10}
-                  alt=""
-                  className="w-full h-full object-cover sm:w-auto md:w-auto lg:w-auto xl:w-auto"
-                />
-              </div>
-            </div>
-
-            <div>
-              <p className="font-bold text-[#4F7853] text-3xl mt-8 mb-6">
-                What is computer bottlenecking?
-              </p>
-              <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5">
-                <p>
-                  It is the delay in transmission of data through the circuits
-                  of a computer’s microprocessor. The delay typically occurs
-                  when a system’s bandwidth cannot support the amount of
-                  information being relayed at the speed it is being processed.
-                  Many factors can create a bottleneck in a system as well. Most
-                  common causes of bottlenecking are:
-                </p>
-                <li className="mt-2">
-                  <span className="font-bold">Insufficient Memory:</span> If
-                  your RAM (Random Access Memory) is too small, it can slow down
-                  overall performance.
-                </li>
-                <li className="mt-2">
-                  <span className="font-bold">Slow Hard Drive: </span>A slow
-                  storage drive (HDD) can bottleneck data transfer speeds.
-                </li>
-                <li className="mt-2">
-                  <span className="font-bold">Weak Processor (CPU): </span> If
-                  your CPU can’t keep up with demanding tasks, it becomes a
-                  bottleneck.
-                </li>
-                <li className="mt-2">
-                  <span className="font-bold">Weak Graphics Card (GPU): </span>{" "}
-                  An underpowered GPU can limit graphical performance,
-                  especially in gaming.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <p className="font-bold text-[#4F7853] text-3xl mt-8 mb-3">
-            Memory Partitioning
-          </p>
-          <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5">
-            <p>
-              A partition is a defined area in memory that stores a program to
-              be executed. The partition size defines the processes that could
-              be executed in the specific partition. The number of partitions
-              defined determines the number of processes that could run
-              concurrently.
-            </p>
-            <li className="mt-2">
-              <span className="font-bold">Fixed Partitioning</span> Divides the
-              main memory into many static partitions during system
-              construction. A process can be loaded into a partition of the same
-              or larger size. Compared to different memory allocation
-              algorithms, fixed partitioning boasts several advantages. For
-              starters, using it is simple and straightforward. Second, it is
-              predictable, allowing the operating system to allocate the optimal
-              amount of RAM to each task. Third, it improves system security and
-              stability by preventing processes from accessing each other's
-              memory area.
-            </li>
-            <li className="mt-2">
-              <span className="font-bold">Dynamic Partitioning</span> The
-              partitions vary in length and number. When a process is brought
-              into main memory, it is assigned only the amount of memory it
-              needed. Dynamic Partitioning allocates space in main memory
-              strictly based on the needs of the process, hence there is no
-              internal fragmentation. There will be no unused space remaining in
-              the division. More processes can be accommodated due to the lack
-              of internal fragmentation, each process can be loaded until the
-              memory is depleted. The process size cannot be controlled because
-              the partition size is determined by the process size. - Possible
-              outcomes: Small gaps in memory and external fragmentation
-            </li>
-          </ul>
-          <div className="font-bold text-[#4F7853] text-3xl mt-8 mb-3">
-            Virtual Memory
-          </div>
-          <div className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5">
-            Virtual memory transformed computer systems by solving the
-            limitation of physical memory via secondary memory utilization. It
-            is used to store application data and instructions not currently
-            being processed by the CPU. Virtual memory remains critical for
-            multitasking and performance enhancement. This feat is accomplished
-            by transferring data between RAM and disk storage, essentially
-            treating primary and secondary memory as one. It also enables a
-            system to run applications larger than the main memory. However,
-            operating at slower speeds than RAM can cause system slowdowns,
-            known as 'thrashing.' Despite its shortcomings, virtual memory
-            remains an important component for executing resource-intensive
-            programs and providing multitasking capabilities.
-          </div>
-          <p className="font-bold text-[#4F7853] text-3xl mt-4 mb-3">Caching</p>
-          <p className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5">
-            Caching is a concept in system architecture that involves keeping
-            frequently requested data in a location that is conveniently
-            accessible. The idea behind this is to reduce access times and
-            increase system efficiency and performance. The name was used to
-            symbolize the memory hierarchy level that exists between the main
-            memory and the CPU. Any storage able to benefit from locality of
-            reference is also called "caching." Its characteristics include
-            increased capacity, decreased latency, and cache availability.
-            Caching thus becomes a vital component in maximizing system
-            responsiveness and functionality.
-          </p>
-          <p className="font-bold text-[#4F7853] text-3xl mt-4 mb-3">
-            Types of Cache Memory
-          </p>
-          <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5">
-            <li>
-              <span className="font-bold">L1 Cache (Primary Cache)</span> This
-              cache level is as fast as the processor because it is embedded in
-              the processor.
-            </li>
-            <li>
-              <span className="font-bold">L2 Cache (External Cache)</span> This
-              cache level is used to catch recent data access from the processor
-              not caught by Level 1.
-            </li>
-            <li>
-              <span className="font-bold">L3 Cache (Shared Cache)</span> This
-              cache catches the recent data all across CPU cores; this is
-              usually slower than L1 and L2.
-            </li>
-          </ul>
-          <p className="font-bold text-[#4F7853] text-3xl mt-4 mb-3">
-            Locality of Reference
-          </p>
-          <ul className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-5">
-            <li>
-              <span className="font-bold">Temporal Locality</span> A resource
-              that is referenced at one (1) point in time is referenced again
-              soon after.
-            </li>
-            <li>
-              <span className="font-bold">Spatial Locality</span> The likelihood
-              of referencing a storage location is greater if a storage location
-              near it has been recently referenced.
-            </li>
-            <p>Accessing a cache is based on the following predictions:</p>
-            <li>
-              <span className="font-bold">Cache Hit</span> - looking for the
-              same piece of data again.
-            </li>
-            <li>
-              <span className="font-bold">Cache Miss</span> - data that isn’t in
-              the cache; it causes latency and delay.
-            </li>
-          </ul>
+          <Link href={"/courses/midterm/lesson2"}>{">"}</Link>
         </div>
       </div>
     </div>
