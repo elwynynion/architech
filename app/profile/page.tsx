@@ -16,6 +16,10 @@ import Link from "next/link";
 
 function Page() {
   const { data: session, status }: any = useSession();
+
+  if (!session) {
+    redirect("/");
+  }
   if (status === "loading") {
     return (
       <div role="status" className="h-[100vh] flex justify-center items-center">
@@ -39,10 +43,6 @@ function Page() {
       </div>
     );
   }
-  if (!session) {
-    redirect("/");
-  }
-
   return (
     <div className="bg-[#FFFEFA] h-[100vh]">
       <div className="container">
@@ -50,27 +50,26 @@ function Page() {
         <div>
           <div className="bg-[#81BC87] h-[150px] w-full border-4 border-[#4F7853] rounded-xl relative">
             <Image
-              src="/elements/Avatar2.png"
+              src={session.user?.profilepic || "/elements/Avatar2.png"}
               alt="avatar"
               width={150}
               height={150}
-              className="rounded-full border-4 border-[#4F7853] absolute bottom-[-70px] left-5"
+              className="rounded-full object-cover object-top w-[150px] h-[150px] border-4 border-[#4F7853] absolute bottom-[-70px] left-5 max-[440px]:w-[120px] max-[440px]:h-[120px] max-[440px]:left-[calc(50%-60px)]"
             />
           </div>
-          <div className="flex items-center">
-            <div className="text-[#4F7853] mt-[65px] ml-7 mr-auto">
+
+          <div className="flex items-center max-[440px]:flex-col max-[440px]:items-stretch">
+            <div className="text-[#4F7853] mt-[65px] ml-7 mr-auto max-[440px]:text-center max-[440px]:mx-auto">
               <p className="font-bold text-[25px]">
                 {session.user?.firstname} {session.user?.lastname}
               </p>
-              <p className="font-semibold text-[20px]">
-                @{session.user?.username}
-              </p>
+              <p className="font-semibold">@{session.user?.username}</p>
               <p>{session.user?.bio}</p>
             </div>
             <div className="flex flex-col space-y-2 mt-4 font-bold">
               <Link
                 href="/profile/edit-profile"
-                className="border-2 text-[#4F7853]  border-[#4F7853] py-1 px-9 rounded-md hover:bg-[#4F7853] hover:text-white transition-all duration-300"
+                className="border-2 text-center text-[#4F7853]  border-[#4F7853] py-1 px-9 rounded-md hover:bg-[#4F7853] hover:text-white transition-all duration-300"
               >
                 Edit Profile
               </Link>
@@ -89,34 +88,38 @@ function Page() {
 
           <div className="flex space-x-4 max-[750px]:flex-col max-[750px]:space-x-0  max-[750px]:space-y-2 max-[750px]:items-center">
             <div className="max-w-[500px] w-full text-[#4F7853] border-2 border-[#4F7853] rounded-xl py-2 px-4 mr-auto max-[750px]:mr-0">
-              <h2 className="font-bold text-[20px]">Information</h2>
+              <h2 className="font-bold text-[20px] max-[450px]:text-[18px]">
+                Information
+              </h2>
               <hr className="border-1 border-[#4F7853] mb-2" />
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <SquareUserRound className="mr-2" />
                 <b>Name:&nbsp;</b> {session.user?.firstname}{" "}
                 {session.user?.lastname}
               </p>
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <GraduationCap className="mr-2" />
                 <b>Course:&nbsp; </b> {session.user?.courses}
               </p>
-              <p className="flex text-[18px]">
-                <Mail className="mr-2" />
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
+                <Mail className="mr-2 max-[450px]:text-[15px]" />
                 <b>E-mail:&nbsp; </b> {session.user?.email}
               </p>
             </div>
-            <div className="max-w-[500px] w-full text-[#4F7853] border-2 border-[#4F7853] rounded-xl py-2 px-4">
-              <h2 className="font-bold text-[20px]">Socials</h2>
+            <div className="max-w-[500px] w-full  text-[#4F7853] border-2 border-[#4F7853] rounded-xl py-2 px-4">
+              <h2 className="font-bold text-[20px] max-[450px]:text-[18px]">
+                Socials
+              </h2>
               <hr className="border-1 border-[#4F7853] mb-2" />
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <Facebook className="mr-2" />
                 <b>Facebook:&nbsp; </b> {session.user?.facebook}
               </p>
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <Linkedin className="mr-2" />
                 <b>LinkedIn:&nbsp; </b> {session.user?.linkedin}
               </p>
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <Github className="mr-2" />
                 <b>GitHub:&nbsp; </b> {session.user?.github}
               </p>

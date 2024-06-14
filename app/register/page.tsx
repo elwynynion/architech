@@ -81,8 +81,11 @@ export default function Page() {
             alt={"architech"}
             width={120}
             height={120}
+            className="max-[450px]:w-[80px] max-[450px]:h-[80px]"
           />
-          <h1 className="font-bold text-[30px]">Welcome to our Site!</h1>
+          <h1 className="font-bold text-[30px] max-[450px]:text-[25px]">
+            Welcome to our Site!
+          </h1>
           <form
             onSubmit={handleSubmit}
             className="flex flex-col max-w-[350px] space-y-4 w-full"

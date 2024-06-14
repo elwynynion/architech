@@ -55,7 +55,7 @@ function Navigation({ name }: { name: string }) {
               height={33}
               alt="Architech Icon"
             />
-            <div className="font-bold text-[#4F7853] text-[24px]">
+            <div className="font-bold text-[#4F7853] text-[24px] max-[450px]:hidden">
               ArchiTech
             </div>
           </Link>
@@ -143,11 +143,11 @@ function Navigation({ name }: { name: string }) {
               <DropdownMenu>
                 <DropdownMenuTrigger>
                   <Image
-                    src={"/elements/avatar.png"}
+                    src={session.user?.profilepic || "/elements/Avatar2.png"}
                     alt="avatar"
                     width={40}
                     height={40}
-                    className="border-2 transition-all duration-300 border-[#4F7853] rounded-full hover:border-[#89cc90] hover:opacity-90"
+                    className="border-2 object-cover object-top h-[40px] w-[40px] transition-all duration-300 border-[#4F7853] rounded-full hover:border-[#89cc90] hover:opacity-90"
                   />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>

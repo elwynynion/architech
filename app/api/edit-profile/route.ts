@@ -8,6 +8,7 @@ export const PATCH = async (request: any) => {
     username,
     firstname,
     lastname,
+    profilepic,
     email,
     bio,
     courses,
@@ -23,6 +24,7 @@ export const PATCH = async (request: any) => {
     return new NextResponse("Unauthorized", { status: 401 });
   }
   console.log(firstname, username);
+
   try {
     const updatedUser = await User.findOneAndUpdate(
       { email: session.user?.email }, // Assuming email is unique and used to find the user
@@ -30,6 +32,7 @@ export const PATCH = async (request: any) => {
         username,
         firstname,
         lastname,
+        profilepic,
         bio,
         courses,
         facebook,

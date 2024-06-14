@@ -1,15 +1,14 @@
 "use client";
 import Navigation from "@/components/shared/Navigation";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
+
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -24,6 +23,7 @@ const formSchema = z.object({
   username: z.string(),
   firstname: z.string(),
   lastname: z.string(),
+  profilepic: z.string(),
   email: z.string(),
   bio: z.string(),
   courses: z.string(),
@@ -33,6 +33,7 @@ const formSchema = z.object({
 });
 
 function Page() {
+  const [base64Image, setBase64Image] = useState("");
   const { data: session, status, update }: any = useSession();
   const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
@@ -41,6 +42,7 @@ function Page() {
       username: session?.user?.userName || "",
       firstname: session?.user?.firstName || "",
       lastname: session?.user?.lastName || "",
+      profilepic: session?.user?.lastName || "",
       email: session?.user?.email || "",
       bio: session?.user?.bio || "",
       courses: session?.user?.courses || "",
@@ -49,8 +51,21 @@ function Page() {
       github: session?.user?.github || "",
     },
   });
+  const handleFileChange = (e: any) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      if (typeof reader.result === "string") {
+        setBase64Image(reader.result);
+      }
+    };
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  };
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values.firstname);
+    console.log(values);
+
     try {
       const response = await fetch("/api/edit-profile", {
         method: "PATCH",
@@ -61,6 +76,7 @@ function Page() {
           username: values.username || session?.user?.userName,
           firstname: values.firstname || session?.user?.firstName,
           lastname: values.lastname || session?.user?.lastName,
+          profilepic: base64Image || session?.user?.profilepic,
           bio: values.bio || session?.user?.bio,
           courses: values.courses || session?.user?.courses,
           facebook: values.facebook || session?.user?.facebook,
@@ -79,6 +95,7 @@ function Page() {
       console.error("An unexpected error occurred:", error);
     }
   }
+
   if (!session) {
     redirect("/");
   }
@@ -105,47 +122,52 @@ function Page() {
       </div>
     );
   }
+
   return (
     <div className="bg-[#FFFEFA] h-[100vh]">
       <div className="container">
         <Navigation name="edit-profile" />
         <div className="text-[#4F7853]">
-          <section className="max-w-[1200px] border-4 border-[#4F7853] rounded-xl p-5 mx-auto">
+          <section className="max-w-[1200px] border-4 border-[#4F7853] rounded-xl p-5 mx-auto max-[450px]:border-none max-[450px]:p-0">
             <div className="flex items-center border-b-2 pb-4 border-[#4F7853]">
               <h1 className="font-bold text-[18px] mr-auto">Edit Profile</h1>
             </div>
-            <div className="max-w-[80%] flex-col justify-between  items-center mx-auto">
-              <div className="flex justify-between items-center mt-8">
-                <div className="">
-                  <p className="font-bold  text-[18px]">Display Photo</p>
-                  <p>150 x 150 px</p>
-                </div>
-                <Image
-                  src={"/elements/Avatar2.png"}
-                  alt="avatar"
-                  width={150}
-                  height={150}
-                />
-                <div className="flex flex-col max-w-[140px] w-full space-y-2">
-                  <button className="bg-[#CFC5C5] text-[#FAF6E9] py-1 px-10 rounded-lg hover:bg-[#999393] transition-all duration-300">
-                    Change
-                  </button>
-                  <button className="bg-red-500 py-1 px-10 rounded-lg text-white hover:bg-red-700 transition-all duration-300">
-                    Delete
-                  </button>
-                </div>
-              </div>
+            <div className="max-w-[80%] flex-col justify-between  items-center mx-auto max-[450px]:max-w-[100%]">
               <div>
-                {/* Forms for user*/}
                 <Form {...form}>
                   <form
                     onSubmit={form.handleSubmit(onSubmit)}
                     className="font-bold space-y-8"
                   >
-                    {/* User Info*/}
+                    <div className="flex justify-between items-center mt-8 max-[660px]:flex-col mb-4">
+                      <div className="max-[660px]:hidden">
+                        <p className="font-bold  text-[18px]">Display Photo</p>
+                        <p>150 x 150 px</p>
+                      </div>
+                      <Image
+                        src={
+                          base64Image
+                            ? base64Image
+                            : session.user?.profilepic ||
+                              "/elements/Avatar2.png"
+                        }
+                        alt="avatar"
+                        width={150}
+                        height={150}
+                        className="mb-2 rounded-full object-cover object-top w-[150px] h-[150px]"
+                      />
+                      <div className="flex flex-col max-w-[140px] w-full space-y-2 text-black ">
+                        <Input
+                          type="file"
+                          accept="image/*"
+                          className="max-w-[150px] w-full hover:border-[#4F7853] cursor-pointer hover:bg-slate-50 transition-all duration-300"
+                          onChange={handleFileChange}
+                        />
+                      </div>
+                    </div>
                     <div className="space-y-2">
                       <h2 className="font-bold text-[18px] ">Information</h2>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-2 gap-2 max-[660px]:grid-cols-1">
                         <FormField
                           control={form.control}
                           name="firstname"
@@ -181,7 +203,7 @@ function Page() {
                           )}
                         />
                       </div>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-2 gap-2 max-[660px]:grid-cols-1">
                         <FormField
                           control={form.control}
                           name="username"
@@ -258,7 +280,7 @@ function Page() {
                     {/* User Socials*/}
                     <div>
                       <h2 className="font-bold text-[18px]">Socials</h2>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-2 gap-2 max-[660px]:grid-cols-1">
                         <FormField
                           control={form.control}
                           name="facebook"
