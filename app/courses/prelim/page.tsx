@@ -49,7 +49,7 @@ function page() {
                   elements that process raw data and instruction.
                 </p>
               </div>
-              <div className=" p-5">
+              <div className="p-5 rounded-xl shadow-xl mb-5">
                 <Image
                   className="rounded-xl lg:h-full object-cover"
                   src={"/prelim-image/computer system.png"}
@@ -61,7 +61,7 @@ function page() {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-10 mb-20">
-              <div className=" p-5">
+              <div className="p-5 rounded-xl shadow-xl mb-5">
                 <Image
                   className="rounded-xl lg:h-full object-cover"
                   src={"/prelim-image/data.png"}
@@ -102,14 +102,14 @@ function page() {
               </div>
             </div>
 
-            <h3 className="textflex font-black text-center text-[#4f7853] text-4xl lg:text-3xl border-b-4 border-[#4f7853]">
+            <h3 className="textflex font-black text-center text-[#4f7853] text-4xl lg:text-3xl border-b-2 border-[#4f7853]">
               Examples of Software
             </h3>
             <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
-                    className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
+                    className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60"
                     src={"/prelim-image/system software.png"}
                     width={200}
                     height={200}
@@ -121,7 +121,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/application software.png"}
@@ -135,7 +135,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/hardware.png"}
@@ -149,7 +149,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/microprocessor.png"}
@@ -163,7 +163,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/primary storage.png"}
@@ -177,7 +177,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/secondary storage.png"}
@@ -191,7 +191,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/hdd.png"}
@@ -205,7 +205,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/flash drive.png"}
@@ -219,7 +219,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/sdd.png"}
@@ -234,12 +234,12 @@ function page() {
               </div>
             </div>
 
-            <h3 className="textflex font-black text-center text-[#4f7853] text-4xl lg:text-3xl border-b-4 border-[#4f7853] mt-20">
+            <h3 className="textflex font-black text-center text-[#4f7853] text-4xl lg:text-3xl border-b-2 border-[#4f7853] mt-20">
               Input Devices
             </h3>
             <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/keyboard.png"}
@@ -253,7 +253,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/mouse.png"}
@@ -267,7 +267,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/microphone.png"}
@@ -282,12 +282,12 @@ function page() {
               </div>
             </div>
 
-            <h3 className="textflex font-black text-center text-[#4f7853] text-4xl lg:text-3xl border-b-4 border-[#4f7853] mt-20">
+            <h3 className="textflex font-black text-center text-[#4f7853] text-4xl lg:text-3xl border-b-2 border-[#4f7853] mt-20">
               Output Devices
             </h3>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/monitor.png"}
@@ -301,7 +301,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/printer.png"}
@@ -315,7 +315,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/speaker.png"}
@@ -329,7 +329,7 @@ function page() {
                 </h4>
               </div>
               <div className="md:col-start-2 md:col-span-1 col-span-1">
-                <div className="">
+                <div className="rounded-xl shadow-xl mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/communication.png"}
@@ -358,7 +358,7 @@ function page() {
             </div>
 
             <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-3 mb-14 mt-14">
-              <div className="border-2 border-[#4f7853] rounded-xl p-5">
+              <div className="border-4 border-white rounded-xl shadow-xl p-5">
                 <h1 className="text-2xl sm:text-4xl font-bold text-[#5C715E] text-center">
                   Design by Form: Classification of Computers
                 </h1>
@@ -404,7 +404,7 @@ function page() {
                 </p>
               </div>
 
-              <div className="border-2 border-[#4f7853] rounded-xl p-3">
+              <div className="border-2 border-white shadow-xl rounded-xl p-3">
                 <h1 className="text-2xl sm:text-4xl font-bold text-[#5C715E] text-center">
                   Design by Function: Computer Operations
                 </h1>
@@ -483,8 +483,8 @@ function page() {
               </div>
             </div>
 
-            <div className=" p-4 sm:p-6 md:p-8 lg:p-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#5C715E] text-center">
+            <div className="border-white shadow-xl rouned-xl p-5">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#5C715E] text-left">
                 Design by Function: Moore’s Law
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 md:mt-5 mb-3 sm:mb-4 md:mb-5">
@@ -498,29 +498,27 @@ function page() {
                 “Transistor count” as a basis for the advancement of integrated
                 circuits.
               </p>
-              <div className="grid gap-6 mt-6 sm:mt-8 md:mt-10">
-                <div className=" p-4 sm:p-5 md:p-2">
-                  <h1 className="text-xl sm:text-2xl font-bold text-[#5C715E] text-left mt-1 sm:mt-2">
-                    Architecture Complexity
-                  </h1>
-                  <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                    As technology arises, computers become more advanced to the
-                    point of designing complex computer systems for a specific
-                    purpose. Thus, this results in the complexity of computer
-                    design. Through the complexity of computer architecture, the
-                    design and understanding of computer systems become harder.
-                  </p>
-                </div>
-
-                <h1 className="text-xl sm:text-2xl font-bold text-[#5C715E] text-left mt-1 sm:mt-2">
-                  Solutions to Architecture Complexity
+              <div className=" sm:p-5 md:p-2">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#5C715E] text-left mt-1 sm:mt-2">
+                  Architecture Complexity
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-justify text-[#4f7853] mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-5">
-                  These are the different solutions to solve this architecture
-                  complexity challenges:
+                  As technology arises, computers become more advanced to the
+                  point of designing complex computer systems for a specific
+                  purpose. Thus, this results in the complexity of computer
+                  design. Through the complexity of computer architecture, the
+                  design and understanding of computer systems become harder.
                 </p>
+              </div>
+            </div>
+
+            <div className=" p-4 sm:p-6 md:p-8 lg:p-10">
+              <div className="grid gap-6 mt-6 sm:mt-8 md:mt-10">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
+                  Solutions to Architecture Complexity
+                </h1>
                 <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 mt-4 sm:mt-5">
-                  <div className="border-2 border-[#4f7853] rounded-xl p-5">
+                  <div className="border-2 border-white shadow-xl rounded-xl p-5">
                     <h1 className="text-lg sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
                       Abstraction
                     </h1>
@@ -534,7 +532,7 @@ function page() {
                       understanding.
                     </p>
                   </div>
-                  <div className="border-2 border-[#4f7853] rounded-xl p-5">
+                  <div className="border-2 border-white shadow-xl rounded-xl p-5">
                     <h1 className="text-lg sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
                       Computer Hierarchy
                     </h1>
@@ -547,7 +545,7 @@ function page() {
                   </div>
                 </div>
 
-                <div className="border-2 border-[#4f7853] rounded-xl p-2 mt-4 sm:mt-5">
+                <div className="border-2 border-white shadow-xl rounded-xl p-2 mt-4 sm:mt-5">
                   <h1 className="text-lg sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
                     Decomposition
                   </h1>
@@ -572,7 +570,7 @@ function page() {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 mt-10">
+                <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 mt-10 border-white rounded-xl shadow-xl">
                   <div className=" p-2 mt-4 col-span-1 lg:col-span-2">
                     <h1 className="lg:text-2xl sm:text-xl font-bold text-[#5C715E] text-center mt-1 sm:mt-2">
                       Five Levels of Memory Hierarchy
@@ -613,7 +611,7 @@ function page() {
                   Characteristics of Memory Hierarchy
                 </h1>
 
-                <div className=" p-5 mt-2 grid lg:grid-cols-2 gap-5">
+                <div className=" p-5 mt-2 grid lg:grid-cols-2 gap-5 border-white shadow-xl rounded-xl">
                   <p className="text-sm sm:text-base md:text-lg text-[#4f7853] mt-2 text-justify sm:mt-3 mb-3 sm:mb-4 md:mb-5">
                     <strong>Capacity</strong> the volume of information that a
                     memory device can store. As we move down the memory pyramid,

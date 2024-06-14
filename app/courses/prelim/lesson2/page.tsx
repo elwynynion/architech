@@ -6,7 +6,7 @@ function page() {
   return (
     <main className="bg-white h-lvh">
       <div className="container">
-        <Navigation name="prelim 1" />
+        <Navigation name="prelim 2" />
 
         <div className="border-2 border-[#4f7853] rounded-xl p-5 mt-10">
           <h1 className="flex font-bold text-[#4f7853] text-lg">
@@ -31,7 +31,7 @@ function page() {
           <h2 className="textflex font-black text-center text-[#4f7853] text-4xl lg:text-6xl border-b-2 border-[#4f7853] mb-6">
             Data Format
           </h2>
-          <div className="">
+          <div className="p-5">
             <div className="grid lg:grid-cols-2 gap-10 mb-10  ">
               <div className="">
                 <h1 className="text-3xl font-bold text-[#4f7853] text-center mb-10">
@@ -52,10 +52,10 @@ function page() {
                   own representation, which is in binaries of ones and zeros.
                 </p>
               </div>
-              <div className="border-4 border-[#4f7853] border-none rounded-xl p-5">
+              <div className="border-4 border-white rounded-xl shadow-xl border-none mb-5 p-5">
                 <Image
-                  className="rounded-xl lg:h-full object-cover"
-                  src={"/prelim-image/data.png"}
+                  className="rounded-xl lg:h-full object-cover "
+                  src={"/final-image/Virtualization.png"}
                   width={2000}
                   height={2000}
                   alt="Computer System"
@@ -64,7 +64,7 @@ function page() {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-5 mb-5 p-2 sm:gap-10 sm:mb-10 sm:p-5">
-              <div className="border-4 border-[#4f7853] border-none rounded-xl p-2 sm:p-5">
+              <div className="border-4 border-white rounded-xl shadow-xl border-none mb-5 p-2 sm:p-5">
                 <Image
                   className="rounded-xl object-cover h-48 sm:h-full"
                   src={"/prelim-image/file type.png"}
@@ -113,7 +113,7 @@ function page() {
 
             <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/Audio and video files.png"}
@@ -127,7 +127,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/Compressed File.png"}
@@ -141,7 +141,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/Disc and media files.png"}
@@ -155,7 +155,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/Executable file.png"}
@@ -169,7 +169,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/image file.png"}
@@ -183,7 +183,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={
@@ -199,7 +199,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/Word processor and text files.png"}
@@ -213,7 +213,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-5">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 "
                     src={"/prelim-image/Presentation and spreadsheet files.png"}
@@ -229,7 +229,7 @@ function page() {
             </div>
 
             <div className="grid gap-5 p-2 mt-20 sm:gap-10 sm:mb-10 sm:p-5 lg:grid-cols-2">
-              <div>
+              <div className="border-white rounded-xl shadow-xl p-5">
                 <h1 className="text-xl font-bold text-center mb-2 text-[#4f7853] sm:text-2xl sm:mb-3">
                   File Format
                 </h1>
@@ -241,7 +241,7 @@ function page() {
                   on the purpose of the file format.
                 </p>
               </div>
-              <div>
+              <div className="border-white rounded-xl shadow-xl p-5">
                 <h1 className="text-xl font-bold text-center mb-2 text-[#4f7853] sm:text-2xl sm:mb-3">
                   Metadata
                 </h1>
@@ -254,7 +254,7 @@ function page() {
               </div>
             </div>
 
-            <div className="grid gap-5 p-2 sm:gap-10 sm:mb-10 sm:p-5 lg:grid-cols-2">
+            <div className="grid gap-2 p-2 sm:gap-10 sm:mb-10 sm:p-5 lg:grid-cols-2">
               <div className="col-start-1 col-span-2">
                 <h1 className="text-xl font-bold text-center mb-2 text-[#4f7853] sm:text-2xl sm:mb-3">
                   File Attributes
@@ -264,8 +264,8 @@ function page() {
                   or deny certain rights to how a user or the operating system
                   can access that file.
                 </p>
-                <div className="grid gap-5 sp-2 mt-10 sm:gap-10 sm:mb-10 sm:p-5 lg:grid-cols-2">
-                  <div>
+                <div className="grid gap-3 sp-2 mt-10 sm:gap-10 sm:mb-10 sm:p-5 lg:grid-cols-2">
+                  <div className="border-white rounded-xl shadow-xl">
                     <h1 className="text-xl font-bold text-center mb-2 text-[#4f7853] sm:text-2xl sm:mb-3">
                       Read-only
                     </h1>
@@ -274,7 +274,7 @@ function page() {
                       the file or changed.
                     </p>
                   </div>
-                  <div>
+                  <div className="border-white rounded-xl shadow-xl">
                     <h1 className="text-xl font-bold text-center mb-2 text-[#4f7853] sm:text-2xl sm:mb-3">
                       Archive
                     </h1>
@@ -282,7 +282,7 @@ function page() {
                       It tells Windows Backup to back up the file.
                     </p>
                   </div>
-                  <div>
+                  <div className="border-white rounded-xl shadow-xl">
                     <h1 className="text-xl font-bold text-center mb-2 text-[#4f7853] sm:text-2xl sm:mb-3">
                       System
                     </h1>
@@ -290,7 +290,7 @@ function page() {
                       It is a system file.
                     </p>
                   </div>
-                  <div>
+                  <div className="border-white rounded-xl shadow-xl">
                     <h1 className="text-xl font-bold text-center mb-2 text-[#4f7853] sm:text-2xl sm:mb-3">
                       Hidden
                     </h1>
@@ -308,7 +308,7 @@ function page() {
             </h3>
             <div className="mt-5 grid grid-cols-1 mb-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-3">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/alpha neumeric.png"}
@@ -322,7 +322,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-3">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={
@@ -338,7 +338,7 @@ function page() {
                 </h4>
               </div>
               <div>
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-3">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/As audio.png"}
@@ -352,7 +352,7 @@ function page() {
                 </h4>
               </div>
               <div className="md:col-start-2 md:col-span-1 col-span-1">
-                <div className="">
+                <div className="border-white rounded-xl shadow-xl border-none mb-3">
                   <Image
                     className="rounded-xl w-full lg:h-56 md:h-40 sm:h-60 h-40"
                     src={"/prelim-image/Internal computer data.png"}
@@ -368,7 +368,7 @@ function page() {
             </div>
 
             <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-3 mb-14 mt-2">
-              <div className="p-5 border-2 border-[#4f7853] rounded-xl">
+              <div className="p-5 border-2 border-white rounded-xl shadow-xl">
                 <h1 className="text-2xl sm:text-4xl font-bold text-[#5C715E] text-center">
                   Data as Alphanumeric Characters
                 </h1>
@@ -409,7 +409,7 @@ function page() {
                 </p>
               </div>
 
-              <div className="p-5 border-2 border-[#4f7853] rounded-xl">
+              <div className="p-5 border-2 border-white rounded-xl shadow-xl">
                 <h1 className="text-2xl sm:text-4xl font-bold text-[#5C715E] text-center">
                   Data as Visual Data
                 </h1>
@@ -478,7 +478,7 @@ function page() {
             </div>
 
             <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-3 mb-14 mt-10">
-              <div className="p-5 border-2 border-[#4f7853] rounded-xl">
+              <div className="p-5 border-2 border-white rounded-xl shadow-xl">
                 <h1 className="text-2xl sm:text-4xl font-bold text-[#5C715E] text-center">
                   Data as Audio Data
                 </h1>
@@ -514,7 +514,7 @@ function page() {
                 </p>
               </div>
 
-              <div className="p-5 border-2 border-[#4f7853] rounded-xl">
+              <div className="p-5 border-2 border-white rounded-xl shadow-xl">
                 <h1 className="text-2xl sm:text-4xl font-bold text-[#5C715E] text-center">
                   Internal Computer Data
                 </h1>
@@ -552,7 +552,7 @@ function page() {
               </div>
             </div>
 
-            <div className="p-5">
+            <div className="p-5 border-white rounded-xl shadow-xl">
               <h1 className="text-2xl sm:text-4xl font-bold text-[#5C715E] text-center mb-8">
                 Internal Computer Data
               </h1>
