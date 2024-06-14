@@ -55,7 +55,7 @@ function Navigation({ name }: { name: string }) {
               height={33}
               alt="Architech Icon"
             />
-            <div className="font-bold text-[#4F7853] text-[24px]">
+            <div className="font-bold text-[#4F7853] text-[24px] max-[450px]:hidden">
               ArchiTech
             </div>
           </Link>

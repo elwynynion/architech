@@ -1,22 +1,58 @@
 export const modules = [
   {
-    terms: "Prelim",
-    name: "Architecture Basic",
-    name2: "Architecture Basic",
+    Prelim: [
+      {
+        module: "Architecture Basic",
+        link: "/",
+      },
+      {
+        module: "Architecture Basic",
+        link: "/",
+      },
+    ],
   },
   {
-    terms: "Midterm",
-    name: "Architecture Basic",
-    name2: "Architecture Basic",
+    Midterm: [
+      {
+        module: "Hardware Architecture",
+        link: "/courses/midterm",
+      },
+      {
+        module: "Memory",
+        link: "/courses/midterm/lesson2",
+      },
+    ],
   },
   {
-    terms: "Pre-finals",
-    name: "Architecture Basic",
-    name2: "Architecture Basic",
+    Prefinal: [
+      {
+        module: "Computer Bus",
+        link: "/courses/pre-final",
+      },
+      {
+        module: "I/O Architecture",
+        link: "/courses/pre-final/lesson2",
+      },
+    ],
   },
   {
-    terms: "Finals",
-    name: "Architecture Basic",
-    name2: "Architecture Basic",
+    Final: [
+      {
+        module: "Computer Storage",
+        link: "/courses/finals",
+      },
+      {
+        module: "Not yet",
+        link: "/",
+      },
+    ],
+  },
+  {
+    References: [
+      {
+        module: "View References",
+        link: "/references",
+      },
+    ],
   },
 ];

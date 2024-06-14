@@ -22,9 +22,9 @@ export default async function Page() {
 
             <div className="w-full bg-[#81BC87] text-white font-bold rounded-lg px-10 pt-10 pb-14 relative">
               <p className="text-[45px] max-[1200px]:text-[38px] max-[765px]:text-[28px] max-[320px]:text-[18px]">
-                Hi {session.user?.email},{" "}
+                Welcome {session.user?.email}
               </p>
-              <p className="text-[20px] max-[1200px]:text-[15px] max-[765px]:text-[12px]">
+              <p className="text-[20px] max-[1200px]:text-[15px] max-[765px]:text-[12px] max-[450px]:hidden">
                 Eager to expand your skills? Let's get started!
               </p>
 
@@ -64,7 +64,7 @@ export default async function Page() {
                 </div>
               </Link>
               <Link
-                href={"/courses/prelim"}
+                href={"/courses/midterm"}
                 className="bg-[#81BC87] transition-all duration-300 w-full p-5 rounded-lg mt-4 cursor-pointer hover:bg-[#5f8b64] "
               >
                 <p className="text-white font-bold text-[25px] max-[320px]:text-[18px]">
@@ -100,7 +100,7 @@ export default async function Page() {
               </Link>
 
               <Link
-                href={"/courses/prelim"}
+                href={"/courses/finals"}
                 className="bg-[#81BC87] transition-all duration-300 w-full p-5 rounded-lg mt-4 cursor-pointer hover:bg-[#5f8b64]"
               >
                 <p className="text-white font-bold text-[25px] max-[320px]:text-[18px]">

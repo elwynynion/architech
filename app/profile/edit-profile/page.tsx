@@ -128,11 +128,11 @@ function Page() {
       <div className="container">
         <Navigation name="edit-profile" />
         <div className="text-[#4F7853]">
-          <section className="max-w-[1200px] border-4 border-[#4F7853] rounded-xl p-5 mx-auto">
+          <section className="max-w-[1200px] border-4 border-[#4F7853] rounded-xl p-5 mx-auto max-[450px]:border-none max-[450px]:p-0">
             <div className="flex items-center border-b-2 pb-4 border-[#4F7853]">
               <h1 className="font-bold text-[18px] mr-auto">Edit Profile</h1>
             </div>
-            <div className="max-w-[80%] flex-col justify-between  items-center mx-auto">
+            <div className="max-w-[80%] flex-col justify-between  items-center mx-auto max-[450px]:max-w-[100%]">
               <div>
                 <Form {...form}>
                   <form
@@ -160,7 +160,7 @@ function Page() {
                         <Input
                           type="file"
                           accept="image/*"
-                          className="max-w-[150px] w-full"
+                          className="max-w-[150px] w-full hover:border-[#4F7853] cursor-pointer hover:bg-slate-50 transition-all duration-300"
                           onChange={handleFileChange}
                         />
                       </div>

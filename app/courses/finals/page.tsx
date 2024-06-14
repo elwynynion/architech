@@ -730,7 +730,14 @@ function page() {
             </div>
           </div>
 
-          <Link href={"/courses/midterm/lesson2"}>{">"}</Link>
+          <div className="w-full flex">
+            <Link
+              href={"/courses/finals/lesson2"}
+              className="bg-[#4F7853] p-2 text-[white] font-bold rounded-md w-[200px] text-center ml-auto"
+            >
+              Next Lesson
+            </Link>
+          </div>
         </div>
       </div>
     </div>

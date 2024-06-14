@@ -9,28 +9,28 @@ function page() {
       <div className="container px-5">
         <Navigation name="courses" />
 
-        <div className="border-4 border-[#4F7853] rounded-[35px] p-10">
-          <h1 className="text-3xl font-bold text-[#4F7853] mb-4">
+        <div className="border-4 border-[#4F7853] rounded-[35px] p-10  max-[460px]:border-none max-[460px]:p-2">
+          <h1 className="text-3xl font-bold text-[#4F7853] mb-4 max-[460px]:text-[15px]">
             Midterm Lesson 1
           </h1>
 
-          <div className="font-bold text-[#4F7853] text-6xl mb-4 text-center">
+          <div className="font-bold text-[#4F7853] text-6xl mb-4 text-center max-[460px]:text-[25px]">
             Hardware Architecture
           </div>
 
           <div className="border-[1px] border-[#4F7853] mb-5"></div>
 
-          <div className="font-bold text-[#4F7853] text-4xl mt-12 ml-4 mb-3">
+          <div className="font-bold text-[#4F7853] text-4xl mt-10 mb-2 max-[450px]:text-[22px]">
             Computer Hardware
           </div>
-          <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc mx-4 p-4">
+          <p className="text-[#4F7853] text-2xl text-justify max-[460px]:text-[19px]">
             These are physical components of computer system (external and
             internal devices and equipment) that performs major functions such
             as input, output, storage, communication, transfer of digital data
             and processing.
           </p>
 
-          <div className="font-bold text-[#4F7853] text-4xl mt-10 mb-10 text-center">
+          <div className="font-bold text-[#4F7853] text-4xl mt-10 mb-10 text-center max-[460px]:text-[20px] ">
             Internal Computer Hardware
           </div>
 
@@ -48,10 +48,10 @@ function page() {
                 </div>
               </div>
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Central Processing Unit (CPU)
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   The Brain of a computer. It is the Primary processing unit
                   responsible for executing and performing calculations. It
                   handles tasks for running programs, managing system resources,
@@ -73,10 +73,10 @@ function page() {
                 </div>
               </div>
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Motherboard
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   The backbone of the computer. It is the main circuit board
                   inside a computer that connects and holds together all the
                   essential components together. It provides communication
@@ -86,7 +86,7 @@ function page() {
             </div>
 
             <div className="border-[0px] rounded-[20px] bg-[#DDEEDF] w-full mb-5 flex max-[700px]:w-full max-[700px]:flex-col shadow-xl">
-              <div className="border-[0px] border-[#4F7853] w-[40%] max-[700px]:w-full">
+              <div className="border-[0px] border-[#4F7853] w-[40%] max-[700px]:w-full ">
                 <div className="h-full">
                   <Image
                     src="/midterm-img/ram.jpg"
@@ -99,10 +99,10 @@ function page() {
               </div>
 
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Random Access Memory Card (RAM)
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   Computer’s short-term memory. It’s the temporary memory space
                   inside a computer that allows it to stores data and
                   instructions that the CPU needs to access quickly. RAM loses
@@ -125,10 +125,10 @@ function page() {
               </div>
 
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Graphics Processing Unit (GPU)
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   It is designed to handle graphics-related tasks. GPU focuses
                   on processing graphical data efficiently and quickly. It helps
                   make your visual experience on a computer more vivid and
@@ -151,10 +151,10 @@ function page() {
               </div>
 
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Power Supply Unit (PSU)
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   The heart of a computer. It provides electrical power that the
                   computer needs. PSU distributes the power through cables to
                   components in order to ensure that they receive the right
@@ -183,10 +183,10 @@ function page() {
               </div>
 
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Hard Disk Drive (HDD)
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   It stores and retrieve digital data. HDD are relatively large
                   storage capacities and affordable pricing compared to other
                   storage technologies. However, they tend to be slower than SDD
@@ -209,10 +209,10 @@ function page() {
               </div>
 
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Solid State Drive (SSD)
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   It stores and retrieve digital data. It uses flash memory
                   chips to store data. SSDs allows to access and transfer data
                   much faster than HDDs, that results quicker boot times, faster
@@ -242,10 +242,10 @@ function page() {
               </div>
 
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Monitor
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   Screens used to display visual output information for
                   computers. It allows users to view and interact with software
                   applications, websites, videos, and other digital content. It
@@ -270,10 +270,10 @@ function page() {
               </div>
 
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Mouse
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   It is a handheld input device used to control the cursor on a
                   computer screen. By moving it across a surface, users can
                   interact with software applications, selecting, clicking,
@@ -297,10 +297,10 @@ function page() {
               </div>
 
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Keyboard
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   It is a fundamental tool for interacting with computers,
                   enabling users to input information and navigate through
                   various tasks efficiently. Keyboards may include additional
@@ -323,7 +323,7 @@ function page() {
                 </div>
               </div>
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Speakers
                 </p>
                 <p className="text-[#4F7853] text-xl text-justify">
@@ -348,10 +348,10 @@ function page() {
                 />
               </div>
               <div className="w-[60%] p-4 max-[700px]:w-full">
-                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4">
+                <p className="font-bold text-[#4F7853] text-2xl text-center mb-4 max-[460px]:text-[22px]">
                   Microphone
                 </p>
-                <p className="text-[#4F7853] text-xl text-justify">
+                <p className="text-[#4F7853] text-xl text-justify max-[460px]:text-[18px]">
                   It captures audio, converting it into digital signals for
                   computer processing and recording. It's widely used for voice
                   calls, video conferencing, recording, speech recognition, and
@@ -421,7 +421,7 @@ function page() {
           </div>
 
           <div className="bg-[#FAF6F9] mt-10 mb-[10px] rounded-[20px] p-4 pb-20 shadow-xl">
-            <div className="font-bold text-[#4F7853] text-4xl mt-10 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-10  mb-3 ">
               Advantages
             </div>
             <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -470,7 +470,7 @@ function page() {
               </p>
             </div>
 
-            <div className="font-bold text-[#4F7853] text-4xl mt-14 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-14  mb-3">
               Disadvantages
             </div>
             <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -586,7 +586,7 @@ function page() {
           </div>
 
           <div className="bg-[#FAF6F9] mt-10 mb-[10px] rounded-[20px] p-4 pb-20 shadow-xl">
-            <div className="font-bold text-[#4F7853] text-4xl mt-10 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-10  mb-3">
               Advantages
             </div>
             <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -636,7 +636,7 @@ function page() {
               </p>
             </div>
 
-            <div className="font-bold text-[#4F7853] text-4xl mt-14 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-14  mb-3">
               Disadvantages
             </div>
             <div className="grid grid-cols-2 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -773,7 +773,7 @@ function page() {
           </div>
 
           <div className="bg-[#FAF6F9] mt-10 mb-[10px] rounded-[20px] p-4 pb-20 shadow-xl">
-            <div className="font-bold text-[#4F7853] text-4xl mt-10 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-10  mb-3">
               Advantages
             </div>
             <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -825,7 +825,7 @@ function page() {
               </p>
             </div>
 
-            <div className="font-bold text-[#4F7853] text-4xl mt-14 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-14 mb-3">
               Disadvantages
             </div>
             <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -966,7 +966,7 @@ function page() {
           </div>
 
           <div className="bg-[#FAF6F9] mt-10 mb-[10px] rounded-[20px] p-4 pb-20 shadow-xl">
-            <div className="font-bold text-[#4F7853] text-4xl mt-10 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-10 mb-3">
               Advantages
             </div>
             <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -1017,7 +1017,7 @@ function page() {
               </p>
             </div>
 
-            <div className="font-bold text-[#4F7853] text-4xl mt-14 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-14 mb-3">
               Disadvantages
             </div>
             <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -1197,7 +1197,7 @@ function page() {
           </div>
 
           <div className="bg-[#FAF6F9] mt-10 mb-[10px] rounded-[20px] p-4 pb-4 shadow-xl">
-            <div className="font-bold text-[#4F7853] text-4xl mt-10 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-10 mb-3">
               Advantages
             </div>
             <div className="grid grid-cols-3 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -1259,7 +1259,7 @@ function page() {
               </p>
             </div>
 
-            <div className="font-bold text-[#4F7853] text-4xl mt-14 ml-10 mb-3">
+            <div className="font-bold text-[#4F7853] text-4xl mt-14  mb-3">
               Disadvantages
             </div>
             <div className="grid grid-cols-2 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1 gap-x-[50px] gap-y-[40px] w-[100%] h-full p-2">
@@ -1445,10 +1445,10 @@ function page() {
           </div>
 
           <div className="p-7">
-            <div className="font-bold text-[#4F7853] text-3xl mt-20 mb-3">
+            <div className="font-bold text-[#4F7853] text-3xl mt-20 mb-3 max-[460px]:text-[20px]">
               Registers
             </div>
-            <div className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8">
+            <div className="text-[#4F7853] text-xl tracking-wide text-justify list-disc ml-6 pr-8 max-[460px]:text-[18px]">
               Computer registers are small, high-speed storage locations within
               the CPU that hold temporary data, instructions, and memory
               addresses needed for program execution. They include the Program
@@ -1591,10 +1591,10 @@ function page() {
           </ul>
 
           <div className="bg-[#FAF6F9] mb-[10px] rounded-[20px] mt-20 p-6 pb-4 shadow-xl">
-            <div className="font-bold text-[#4F7853] text-4xl mb-10 text-center">
+            <div className="font-bold text-[#4F7853] text-4xl mb-10 text-center max-[460px]:text-[22px]">
               Registers
             </div>
-            <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc ml-6 pr-8">
+            <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc ml-6 pr-8 max-[460px]:text-[18px]">
               In computer architecture, a processor register provides the
               fastest way for a CPU to access data. Modern computer
               architectures operate on the principle of moving data from the
@@ -1605,7 +1605,7 @@ function page() {
               registers can store larger binary values, such as bytes or words.
             </p>
             <br />
-            <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc ml-6 pr-8">
+            <p className="text-[#4F7853] text-2xl tracking-wide text-justify list-disc ml-6 pr-8 max-[460px]:text-[18px]">
               Registers also contain control logic circuitry, which allows it to
               coordinate the flow of data and instructions within the CPU. This
               can include operations such as decoding control signals,
@@ -2022,8 +2022,14 @@ function page() {
               </div>
             </div>
           </div>
-
-          <Link href={"/courses/midterm/lesson2"}>{">"}</Link>
+          <div className="w-full flex mt-8">
+            <Link
+              href={"/courses/midterm/lesson2"}
+              className="bg-[#4F7853] p-2 text-[white] font-bold rounded-md w-[200px] text-center ml-auto"
+            >
+              Next Lesson
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -1,13 +1,14 @@
 import React from "react";
 import Navigation from "@/components/shared/Navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 function page() {
   return (
     <div className="bg-[#FFFEFA] h-[100vh]">
       <div className="container px-5">
         <Navigation name="courses" />
-        <div className="border-4 border-[#4F7853] rounded-[35px] p-10">
+        <div className="border-4 max-[450px]:border-0 border-[#4F7853] rounded-[35px] p-10 max-[450px]:p-0">
           <h1 className="text-3xl font-bold text-[#4F7853] mb-4">
             Midterm Lesson 2
           </h1>
@@ -735,6 +736,14 @@ function page() {
                 />
               </div>
             </div>
+          </div>
+          <div className="w-full flex mt-8">
+            <Link
+              href={"/courses/pre-final"}
+              className="bg-[#4F7853] p-2 text-[white] font-bold rounded-md w-[200px] text-center ml-auto"
+            >
+              Next Lesson
+            </Link>
           </div>
         </div>
       </div>

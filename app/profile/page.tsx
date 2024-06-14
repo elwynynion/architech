@@ -54,9 +54,10 @@ function Page() {
               alt="avatar"
               width={150}
               height={150}
-              className="rounded-full object-cover object-top w-[150px] h-[150px] border-4 border-[#4F7853] absolute bottom-[-70px] left-5 max-[440px]:w-[120px] max-[440px]:h-[120px] max-[440px]:left-[60px]"
+              className="rounded-full object-cover object-top w-[150px] h-[150px] border-4 border-[#4F7853] absolute bottom-[-70px] left-5 max-[440px]:w-[120px] max-[440px]:h-[120px] max-[440px]:left-[calc(50%-60px)]"
             />
           </div>
+
           <div className="flex items-center max-[440px]:flex-col max-[440px]:items-stretch">
             <div className="text-[#4F7853] mt-[65px] ml-7 mr-auto max-[440px]:text-center max-[440px]:mx-auto">
               <p className="font-bold text-[25px]">
@@ -87,34 +88,38 @@ function Page() {
 
           <div className="flex space-x-4 max-[750px]:flex-col max-[750px]:space-x-0  max-[750px]:space-y-2 max-[750px]:items-center">
             <div className="max-w-[500px] w-full text-[#4F7853] border-2 border-[#4F7853] rounded-xl py-2 px-4 mr-auto max-[750px]:mr-0">
-              <h2 className="font-bold text-[20px]">Information</h2>
+              <h2 className="font-bold text-[20px] max-[450px]:text-[18px]">
+                Information
+              </h2>
               <hr className="border-1 border-[#4F7853] mb-2" />
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <SquareUserRound className="mr-2" />
                 <b>Name:&nbsp;</b> {session.user?.firstname}{" "}
                 {session.user?.lastname}
               </p>
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <GraduationCap className="mr-2" />
                 <b>Course:&nbsp; </b> {session.user?.courses}
               </p>
-              <p className="flex text-[18px]">
-                <Mail className="mr-2" />
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
+                <Mail className="mr-2 max-[450px]:text-[15px]" />
                 <b>E-mail:&nbsp; </b> {session.user?.email}
               </p>
             </div>
-            <div className="max-w-[500px] w-full text-[#4F7853] border-2 border-[#4F7853] rounded-xl py-2 px-4">
-              <h2 className="font-bold text-[20px]">Socials</h2>
+            <div className="max-w-[500px] w-full  text-[#4F7853] border-2 border-[#4F7853] rounded-xl py-2 px-4">
+              <h2 className="font-bold text-[20px] max-[450px]:text-[18px]">
+                Socials
+              </h2>
               <hr className="border-1 border-[#4F7853] mb-2" />
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <Facebook className="mr-2" />
                 <b>Facebook:&nbsp; </b> {session.user?.facebook}
               </p>
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <Linkedin className="mr-2" />
                 <b>LinkedIn:&nbsp; </b> {session.user?.linkedin}
               </p>
-              <p className="flex text-[18px]">
+              <p className="flex text-[18px] max-[450px]:text-[15px]">
                 <Github className="mr-2" />
                 <b>GitHub:&nbsp; </b> {session.user?.github}
               </p>
