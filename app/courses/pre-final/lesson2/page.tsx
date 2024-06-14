@@ -11,7 +11,7 @@ function page() {
         <Navigation name="pre-final" />
         <div
           className="border-4 border-[#4F7853] rounded-lg p-6 
-        max-[450px]:border-0"
+        "
         >
           <p className="text-[#4F7853] font-bold text-[22px]">
             Pre-Final &gt; Lesson 2
