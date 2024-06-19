@@ -89,7 +89,7 @@ export const team = [
     id: "14",
     name: "Bautista, Clarence",
     image: "/teams/Bautista.JPG",
-    position: "AUTHENTICATION",
+    position: "AUTHENTICATION DEV",
   },
   {
     id: "15",
@@ -258,12 +258,6 @@ export const team = [
     id: "42",
     name: "Bihay, Drew Leanne",
     image: "/teams/Bihay.jpg",
-    position: "FINAL RESEARCHER",
-  },
-  {
-    id: "43",
-    name: "Espino, Gilbert",
-    image: "/teams/Espino.jpg",
     position: "FINAL RESEARCHER",
   },
   {
